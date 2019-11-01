@@ -1,15 +1,21 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-export default class CustomDocument extends Document {
+class MyDocument extends Document {
   render() {
     return (
-      <html lang="en">
+      <Html>
         <Head />
         <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
           <Main />
           <NextScript />
+          {/* <script src=".bulma-carousel/dist/js/bulma-carousel.min.js"></script> */}
+
         </body>
-      </html>
+
+        </Html>
     );
   }
 }
+
+export default MyDocument;

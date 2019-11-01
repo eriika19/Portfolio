@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Router from 'next/router';
 import Head from 'next/head';
 
-import Nav from './Nav';
+import Carousel from './Carousel';
 
 class Header extends Component {
   state = { loading: false };
@@ -24,16 +24,16 @@ class Header extends Component {
       <div className="header">
         <Head>
           <meta charSet="UTF-8" />
-          <meta name="description" content="An example PWA" />
+          <meta name="description" content="Front-End Portfolio" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#302ecd" />
-          <title>Movies PWA</title>
+          <title>Portafolio</title>
           <link rel="manifest" href="/_next/static/manifest.json" />
           <link rel="icon" href="/static/favicon.ico" />
           <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
         <Loader loading={this.state.loading} />
-        <Nav />
+        <Carousel />
       </div>
     );
   }

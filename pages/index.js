@@ -1,31 +1,47 @@
 import Head from 'next/head';
+//import 'bulma/css/bulma.min.css';
+//import Link from 'next/link';
 
-import Movie from '../components/Movie';
-import Oops from '../components/Oops';
+//import Oops from '../components/Oops';
+import Project from '../components/Project';
 
-import { getUpcomingMovies } from '../utils/apiCalls';
+import ProjectData from '../data/projects.json';
+//import { getProjects } from '../utils/apiCalls';
 
-const Home = ({ movies, error }) => (
+const Home = () => (
   <div className="home">
     <Head>
-      <title>Index | Movies PWA</title>
+      <title>Portafolio | Enciso FE</title>
     </Head>
-    {error ? <Oops /> : movies.map(props => <Movie {...props} key={props.id} />)}
+    {ProjectData.projects.map(props => <Project {...props} key={props.id} />)}
+    {/* {projects.map(props => <Project {...props} key={props.id} />)} */}
+    {/* {!projects ? <Oops /> : projects.map(props => <Project {...props} key={props.id} />)} */}
   </div>
 );
 
-Home.getInitialProps = async () => {
-  const res = await getUpcomingMovies();
-  if (res.error) return res;
+/* Home.getInitialProps = () => {
+  const projects = ProjectData.projects;
+log
+  return { projects };
+} */
 
-  const movies = res.results.map(({ title, id, poster_path, overview }) => ({
-    title,
-    poster_path,
-    overview,
+/* Home.getInitialProps = () => {
+  const data = ProjectData;
+
+  const projects = data.projects.map(({ id, title, date, tags, description, thumbnail, type, github, demo, label }) => ({
     id,
+    title,
+    date,
+    tags,
+    description,
+    thumbnail,
+    type,
+    github,
+    demo,
+    label
   }));
 
-  return { movies };
-};
+  return { projects };
+}; */
 
 export default Home;

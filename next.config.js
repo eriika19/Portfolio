@@ -35,23 +35,6 @@ module.exports = withCSS({
           },
         },
         {
-          urlPattern: /[^3]\/movie\//,
-          handler: 'networkFirst',
-          options: {
-            cacheName: 'html-cache',
-          },
-        },
-        {
-          urlPattern: new RegExp('^https://api.themoviedb.org/3/movie'),
-          handler: 'staleWhileRevalidate',
-          options: {
-            cacheName: 'api-cache',
-            cacheableResponse: {
-              statuses: [200],
-            },
-          },
-        },
-        {
           urlPattern: /.*\.(?:png|jpg|jpeg|svg|gif)/,
           handler: 'cacheFirst',
           options: {
@@ -72,9 +55,9 @@ module.exports = withCSS({
         }),
         new WebpackPwaManifest({
           filename: 'static/manifest.json',
-          name: 'Next PWA',
-          short_name: 'Next-PWA',
-          description: 'A Movie browsing PWA using Next.js and Google Workbox',
+          name: 'Portafolio | Front-End',
+          short_name: 'Portafolio',
+          description: 'Personal web site for my projects as Front-End Developer',
           background_color: '#ffffff',
           theme_color: '#5755d9',
           display: 'standalone',
@@ -83,7 +66,7 @@ module.exports = withCSS({
           inject: false,
           start_url: '/',
           ios: {
-            'apple-mobile-web-app-title': 'Next-PWA',
+            'apple-mobile-web-app-title': 'Portafolio',
             'apple-mobile-web-app-status-bar-style': '#5755d9',
           },
           icons: [
