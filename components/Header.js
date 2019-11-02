@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Router from 'next/router';
 import Head from 'next/head';
 
-import Carousel from './Carousel';
 
 class Header extends Component {
   state = { loading: false };
@@ -21,7 +20,7 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="header">
+      <section className="header">
         <Head>
           <meta charSet="UTF-8" />
           <meta name="description" content="Front-End Portfolio" />
@@ -33,8 +32,7 @@ class Header extends Component {
           <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
         <Loader loading={this.state.loading} />
-        <Carousel />
-      </div>
+      </section>
     );
   }
 }

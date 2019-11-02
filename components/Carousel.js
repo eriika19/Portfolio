@@ -27,8 +27,13 @@ class Carousel extends Component {
                   <div className='item-1'>
                     <img className="is-background" src="/static/mesereando.png" alt="mesereando"/>                      
           </div>
-          <div className='item-2'></div>
-          <div className='item-3'></div>
+            <div className='item-2'>
+            <img className="is-background" src="/static/md_links.jpg" alt="mesereando"/>                                    
+          </div>
+            <div className='item-3'>
+            <img className="is-background" src="/static/sacbe.png" alt="mesereando"/>                      
+              
+          </div>
         </div>
         <div className='hero-head'><Nav/></div>
         <div className='hero-body'>Proyectos</div>
@@ -54,14 +59,6 @@ class Carousel extends Component {
             </div>
         </div>
     </div>*/
-        
-        /*   <header className="navbar">
-        <section className="navbar-section">
-        <Link prefetch href="/">
-            <button className="btn btn-link text-bold">Home</button>
-          </Link>
-        </section>
-      </header> */
   }
 }
 

@@ -1,16 +1,10 @@
 import Link from 'next/link';
 import Head from 'next/head';
 //import 'bulma/css/bulma.min.css';
-
-import Oops from '../components/Oops';
-//import Image from '../components/Image';
-//import img from '../assets';
+//import Oops from '../components/Oops';
 
 import ProjectData from '../data/projects.json';
-//import { getProjects } from '../utils/apiCalls';
-//import { getImageSrc } from '../utils/apiCalls';
 
-//import img from '../assets';
 
 const ProjectPage = ({ title, date, tags, description, thumbnail, type, github, demo, label }) =>
 (
@@ -66,6 +60,7 @@ ProjectPage.getInitialProps = ({ query: { id } }) => {
     tags,
     description,
     thumbnail,
+    src,
     type,
     label,
     github,
@@ -78,6 +73,7 @@ ProjectPage.getInitialProps = ({ query: { id } }) => {
     tags,
     description,
     thumbnail,
+    src,
     type,
     tags,
     label,

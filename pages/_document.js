@@ -9,10 +9,7 @@ class MyDocument extends Document {
         <noscript>You need to enable JavaScript to run this app.</noscript>
           <Main />
           <NextScript />
-          {/* <script src=".bulma-carousel/dist/js/bulma-carousel.min.js"></script> */}
-
         </body>
-
         </Html>
     );
   }
