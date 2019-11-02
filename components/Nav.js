@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import Link from 'next/link';
 
 import 'bulma/css/bulma.min.css';
+import { homedir } from 'os';
 
 class Nav extends Component {
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
     this.state = {
-      navMenuOpen: false
+      navMenuOpen: false,
+      pageOpen: this.props.pageOpen
     };
   }
 
@@ -20,49 +22,53 @@ class Nav extends Component {
 
   render() {
     return (
-      <nav className='navbar' role='navigation' aria-label='main navigation'>
-        <div className='navbar-brand'>
-          <Link className='navbar-item' href='/'>
-            <img
-              src='https://bulma.io/images/bulma-logo.png'
-              alt='logo'
-              width='112'
-              height='28'
-            />
-          </Link>
-          <a
-            role='button'
-            className={
-              this.state.navMenuOpen
-                ? 'navbar-burger is-active'
-                : 'navbar-burger'
-            }
-            data-target='navMenu'
-            aria-label='menu'
-            aria-expanded='false'
-            onClick={this.toggle}>
-            <span aria-hidden='true'></span>
-            <span aria-hidden='true'></span>
-            <span aria-hidden='true'></span>
-          </a>
-        </div>
-
-        <div
-          className={
-            this.state.navMenuOpen ? 'navbar-menu is-active' : 'navbar-menu'
-          }
-          id='navMenu'>
-          <div className='navbar-end'>
-            <Link className='navbar-item' href='/'>
+      <nav className='navbar'>
+        <div className='container'>
+          <div className='navbar-brand'>
+            <a className='navbar-item'>
               <img
-                src='https://bulma.io/images/bulma-logo.png'
-                alt='logo'
-                width='112'
-                height='28'
+                src='/static/enciso.png'
+                alt='Logo-Enciso'
               />
-            </Link>
+            </a>
+            <span
+              className={
+                this.state.navMenuOpen
+                  ? 'navbar-burger is-active'
+                  : 'navbar-burger'
+              }
+              data-target='navbarMenuHeroB'
+              onClick={this.toggle}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div
+            className={
+              this.state.navMenuOpen ? 'navbar-menu is-active' : 'navbar-menu'
+            }
+            id='navbarMenuHeroB'>
+            <div className='navbar-end'>
+              <Link href='/about'>
+                <a className={this.state.pageOpen === 'about' ? 'navbar-item is-active' : 'navbar-item' }>Acerca de mí</a>
+              </Link>
+              <Link href='/contact'>
+                <a className={this.state.pageOpen === 'contact' ? 'navbar-item is-active' : 'navbar-item' }>Contacto</a>
+              </Link>
+              <Link href='/'>
+                <a className={this.state.pageOpen === 'home' ? 'navbar-item is-active' : 'navbar-item' }>Inicio</a>
+              </Link>
+            </div>
           </div>
         </div>
+        <style jsx>
+          {`
+            .navbar-menu {
+              background-color: transparent !important;
+            }
+          `}
+        </style>
       </nav>
     );
   }

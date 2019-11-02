@@ -11,17 +11,16 @@ class Project extends Component {
   render() {
     const { id, title, date, tags, description, src, thumbnail, type, github, demo, label } = this.props;
     return (
-
       <Link as={`/project/${id}`} href={`/project?id=${id}`}>
-        <div className='' id={`project-${id}`} onMouseEnter={this.prefetchProjectPage}>
+        <div className="card" id={`project-${id}`} onMouseEnter={this.prefetchProjectPage}>
         <img src={src} alt={`Image for ${title}`} width="300"/>                  
           {/* <div className="card-image">
             <Image src={img[thumbnail]} alt={`Image for ${title}`} className="img-responsive" />
-          </div> */}
-          <div className="">
-            <div className="">{title}</div>
+          </div> */}git 
+          <div className="card-header">
+            <div className="card-title h5 text-primary text-ellipsis">{title}</div>
           </div>
-          <div className="">{description}</div>
+          <div className="card-body text-ellipsis">{description}</div>
         </div>
       </Link>
     );

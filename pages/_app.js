@@ -4,7 +4,7 @@ import App from 'next/app';
 import Header from '../components/Header';
 import OfflineSupport from '../components/OfflineSupport';
 
-class myApp extends App {
+class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
@@ -17,4 +17,4 @@ class myApp extends App {
   }
 }
 
-export default myApp;
+export default MyApp;

@@ -4,18 +4,20 @@ import Head from 'next/head';
 
 //import Oops from '../components/Oops';
 import Carousel from '../components/Carousel';
+import Dashboard from '../components/Dashboard';
 import Project from '../components/Project';
 import ProjectData from '../data/projects.json';
 
 const Home = () => (
-  <div className="home">
+  <section className="home">
     <Head>
       <title>Portafolio | Enciso FE</title>
     </Head>
-    <Carousel />
-    {ProjectData.projects.map(props => <Project {...props} key={props.id} />)}
+    <Carousel/>
+    <Dashboard/>
+    {/* {ProjectData.projects.map(props => <Project {...props} key={props.id} />)} */}
     {/* {!projects ? <Oops /> : projects.map(props => <Project {...props} key={props.id} />)} */}
-  </div>
+  </section>
 );
 
 export default Home;

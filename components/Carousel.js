@@ -4,7 +4,6 @@ import 'bulma-carousel/dist/css/bulma-carousel.min.css';
 
 import Nav from './Nav';
 
-
 class Carousel extends Component {
   componentDidMount() {
     const bulmaCarousel = () => {
@@ -20,45 +19,49 @@ class Carousel extends Component {
   }
 
   render() {
-      return (
-        <section className='hero is-medium has-carousel'>
-              <div id='carousel-demo' className='hero-carousel'>
-                  
-                  <div className='item-1'>
-                    <img className="is-background" src="/static/mesereando.png" alt="mesereando"/>                      
+    return (
+      <section id='carousel' className='hero is-medium is-dark has-carousel carousel-animate-slide'>
+        <div id='carousel-demo' className='hero-carousel carousel-container'>
+        <div className='carousel-item has-background is-active item-1'>
+            <img
+              className='is-background'
+              src='/static/fondo.png'
+              alt='wallpaper'
+            />
           </div>
-            <div className='item-2'>
-            <img className="is-background" src="/static/md_links.jpg" alt="mesereando"/>                                    
+{/*           <div className='carousel-item has-background is-active item-1'>
+            <img
+              className='is-background'
+              src='/static/mesereando.png'
+              alt='Mesereando'
+            />
+          </div> */}
+          <div className='carousel-item has-background item-2'>
+            <img
+              className='is-background'
+              src='/static/md_links.jpg'
+              alt='MD_Links'
+            />
           </div>
-            <div className='item-3'>
-            <img className="is-background" src="/static/sacbe.png" alt="mesereando"/>                      
-              
+          <div className='carousel-item has-background item-3'>
+            <img
+              className='is-background'
+              src='/static/sacbe.png'
+              alt='Sacbé'
+            />
           </div>
         </div>
-        <div className='hero-head'><Nav/></div>
-        <div className='hero-body'>Proyectos</div>
-        <div className='hero-foot'></div>
-      </section> 
-        );
-        /*           
-                      <div>
-        <div className='carousel carousel-animated carousel-animate-slide'>
-            <div className='carousel-container'>
-                <div className='carousel-item has-background is-active'>
-                    <img className="is-background" src="" alt="" width="640" height="310" />
-                    <div className="title">Merry Christmas</div>
-                </div>
-                <div className='carousel-item has-background'>
-                    <img className="is-background" src="https://wikiki.github.io/images/singer.jpg" alt="" width="640" height="310" />
-                    <div className="title">Original Gift: Offer a song with <a href="https://lasongbox.com" target="_blank">La Song Box</a></div>
-                </div>
-                <div className='carousel-item has-background'>
-                    <img className="is-background" src="https://wikiki.github.io/images/sushi.jpg" alt="" width="640" height="310" />
-                    <div className="title">Sushi time</div>
-                </div>
-            </div>
+        <div className='hero-head'>
+          <Nav pageOpen='home'/>
         </div>
-    </div>*/
+        <div className='hero-body'>
+          <div className='container has-text-centered'>
+            <p className='title has-text-white'>Título</p>
+            <p className='subtitle has-text-white'>Subtítulo</p>
+          </div>
+        </div>
+      </section>
+    );
   }
 }
 
