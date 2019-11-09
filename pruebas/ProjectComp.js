@@ -24,30 +24,18 @@ class Project extends Component {
     return (
       <Link as={`/project/${id}`} href={`/project?id=${id}`}>
         <div
-          className='card'
+          className=''
           id={`project-${id}`}
           onMouseEnter={this.prefetchProjectPage}>
           <img src={src} alt={`Image for ${title}`} width='300' />
-          {/* <div className="card-image">
-            <Image src={img[thumbnail]} alt={`Image for ${title}`} className="img-responsive" />
-          </div> */}
-          <div className='card-header'>
-            <div className='card-title h5 text-primary text-ellipsis'>
-              {title}
-            </div>
+          <div className=''>
+            <div className=''>{title}</div>
           </div>
-          <div className='card-body text-ellipsis'>{description}</div>
+          <div className=''>{description}</div>
         </div>
       </Link>
     );
   }
-}
-
-{
-  /* {ProjectData.projects.map(props => <Project {...props} key={props.id} />)} */
-}
-{
-  /* {!projects ? <Oops /> : projects.map(props => <Project {...props} key={props.id} />)} */
 }
 
 export default Project;

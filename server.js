@@ -1,7 +1,7 @@
 const { join } = require('path');
 const express = require('express');
 const next = require('next');
-const cache = require('lru-cache'); // for using least-recently-used based caching
+const cache = require('url-cache'); // for using least-recently-used based caching
 
 const PORT = 8000;
 const dev = process.env.NODE_ENV !== 'production';
@@ -10,7 +10,7 @@ const handle = app.getRequestHandler();
 
 const ssrCache = new cache({
   max: 20, // not more than 20 results will be cached
-  maxAge: 1000 * 60 * 5, // 5 mins
+  maxAge: 1000 * 60 * 5 // 5 mins
 });
 
 app.prepare().then(() => {
@@ -20,10 +20,10 @@ app.prepare().then(() => {
     renderAndCache(req, res, '/');
   });
 
-  server.get('/movie/:id', (req, res) => {
+  /*   server.get('/project/:id', (req, res) => {
     const queryParams = { id: req.params.id };
-    renderAndCache(req, res, '/movie', queryParams);
-  });
+    renderAndCache(req, res, '/project', queryParams);
+  }); */
 
   server.get('*', (req, res) => {
     if (req.url.includes('/sw')) {

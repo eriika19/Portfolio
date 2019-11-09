@@ -15,7 +15,6 @@ class MyDocument extends Document {
                 font-family: 'Quicksand', sans-serif;
                 font-weight: 500 !important;
               }
-
               a {
                 color: #fff;
               }

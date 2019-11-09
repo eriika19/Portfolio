@@ -1,33 +1,33 @@
 import Link from 'next/link';
 import Head from 'next/head';
-//import 'bulma/css/bulma.min.css';
-//import Oops from '../components/Oops';
-import Nav from '../components/Nav';
 
-
-import ProjectData from '../data/projects.json';
+import Hero from '../components/Hero';
 
 const AboutPage = () => (
   // ({ title, date, tags, description, thumbnail, type, github, demo, label }) =>
   <section id='about'>
     <Head>
-      <title> Enciso | Acerca de mí </title>
+      <title> Enciso FE | Acerca de mí </title>
     </Head>
-    <section id='main' className='hero is-medium is-dark'>
-    <div className='hero-head'>
-          <Nav pageOpen='about'/>
-        </div>
-    <div className='tile is-parent'>
-      <article className='tile is-child notification is-danger'>
-        <p className='title'>Itzel Enciso | Front-End</p>
-        <p className='subtitle'>Acerca de mí</p>
-        <div className='content'>Aquí hablaré de mí</div>
-      </article>
+    <Hero pageOpen='about' />
+    <div className='tile is-ancestor'>
+      <div className='tile is-parent'>
+        <article className='tile is-child notification is-info'>
+          <p className='title'>Enciso FE | Acerca de mí</p>
+          <p className='subtitle'>Acerca de mí</p>
+          <div className='content'>
+            Aquí hablaré de mí, mis intereses y timeline de desarrollo
+            académico. Metodologías utilizadas, soft skills y tech skills;
+            además de un icono para descargar CV en formato PDF.
+          </div>
+        </article>
+      </div>
     </div>
-    <Link href='/'>
-      <button className='button is-focused'>Regresar</button>
-        </Link>
-        </section>
+    <div className='level-item'>
+      <Link href='/'>
+        <button className='button is-size-4 is-focused'>Regresar</button>
+      </Link>
+    </div>
   </section>
 );
 

@@ -7,57 +7,50 @@ module.exports = withCSS({
   webpack(config, { isServer, buildId, dev }) {
     // Fixes npm packages that depend on `fs` module
     config.node = {
-      fs: 'empty',
+      fs: 'empty'
     };
 
     if (!isServer) {
-      config.module.rules.find(({ test }) => test.test('style.css')).use.push({
-        loader: 'css-purify-webpack-loader',
-        options: {
-          includes: ['./pages/*.js', './components/*.js'],
-        },
-      });
+      config.module.rules
+        .find(({ test }) => test.test('style.css'))
+        .use.push({
+          loader: 'css-purify-webpack-loader',
+          options: {
+            includes: ['./pages/*.js', './components/*.js']
+          }
+        });
     }
-
+    
     const workboxOptions = {
       clientsClaim: true,
       skipWaiting: true,
       globPatterns: ['.next/static/*', '.next/static/commons/*'],
       modifyUrlPrefix: {
-        '.next': '/_next',
+        '.next': '/_next'
       },
       runtimeCaching: [
         {
           urlPattern: '/',
           handler: 'networkFirst',
           options: {
-            cacheName: 'html-cache',
-          },
-        },
-        {
-          urlPattern: /.*\.(?:png|jpg|jpeg|svg|gif)/,
-          handler: 'cacheFirst',
-          options: {
-            cacheName: 'image-cache',
-            cacheableResponse: {
-              statuses: [0, 200],
-            },
-          },
-        },
-      ],
+            cacheName: 'html-cache'
+          }
+        }
+      ]
     };
 
     if (!isServer && !dev) {
       config.plugins.push(
         new NextWorkboxPlugin({
           buildId,
-          ...workboxOptions,
+          ...workboxOptions
         }),
         new WebpackPwaManifest({
           filename: 'static/manifest.json',
-          name: 'Portafolio | Front-End',
-          short_name: 'Portafolio',
-          description: 'Personal web site for my projects as Front-End Developer',
+          name: 'Portfolio | Front-End',
+          short_name: 'Portfolio',
+          description:
+            'Personal web site for my projects as Front-End Developer',
           background_color: '#ffffff',
           theme_color: '#5755d9',
           display: 'standalone',
@@ -66,22 +59,21 @@ module.exports = withCSS({
           inject: false,
           start_url: '/',
           ios: {
-            'apple-mobile-web-app-title': 'Portafolio',
-            'apple-mobile-web-app-status-bar-style': '#5755d9',
+            'apple-mobile-web-app-title': 'Portfolio',
+            'apple-mobile-web-app-status-bar-style': '#5755d9'
           },
           icons: [
             {
               src: path.resolve('static/favicon.ico'),
               sizes: [96, 128, 192, 256, 384, 512],
-              destination: '/static',
-            },
+              destination: '/static'
+            }
           ],
           includeDirectory: true,
-          publicPath: '..',
+          publicPath: '..'
         })
       );
     }
-
     return config;
-  },
+  }
 });

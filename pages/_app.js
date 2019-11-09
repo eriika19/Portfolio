@@ -1,20 +1,19 @@
-import React from 'react';
-import App from 'next/app';
+//import React from 'react';
+//import App from 'next/app';
 
 import Header from '../components/Header';
 import OfflineSupport from '../components/OfflineSupport';
+import Footer from '../components/Footer';
 
-class MyApp extends App {
-  render() {
-    const { Component, pageProps } = this.props;
-    return (
-      <div>
-        <Header />
-        <OfflineSupport />
-        <Component {...pageProps} />
-      </div>
-    );
-  }
+function MyApp({ Component, pageProps }) {
+  return (
+    <div>
+      <Header />
+      <OfflineSupport />
+      <Component {...pageProps} />
+      <Footer />
+    </div>
+  );
 }
 
 export default MyApp;
