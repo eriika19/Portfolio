@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 import Nav from './Nav';
 
@@ -22,7 +22,7 @@ class Hero extends Component {
           <figure className='has-background item-1'>
             <img
               className='is-background'
-              src='/static/assets/head.png'
+              src='/assets/head.png'
               alt='wallpaper'
             />
           </figure>

@@ -1,7 +1,5 @@
 //import Oops from '../components/Oops';
 //import Project from '../components/Project';
-//import ProjectData from '../data/projects.json';
-
 const Dashboard = () => (
   <section id='dashboard'>
     <div className='tile is-ancestor'>
@@ -12,7 +10,7 @@ const Dashboard = () => (
               <figure className='image level-item'>
                 <img
                   className='is-rounded is-picture shadow'
-                  src='static/assets/foto.png'
+                  src='/assets/foto.png'
                 />
               </figure>
             </div>
@@ -47,7 +45,7 @@ const Dashboard = () => (
               <figure className='image level-item is-award'>
                 <img
                   className='is-rounded is-small-thumbnail'
-                  src='static/assets/smart_spend2.png'
+                  src='/assets/smart_spend2.png'
                 />
               </figure>
             </div>
@@ -59,7 +57,7 @@ const Dashboard = () => (
               <figure className='image level-item is-award'>
                 <img
                   className='is-rounded is-small-thumbnail'
-                  src='static/assets/ibm.png'
+                  src='/assets/ibm.png'
                 />
               </figure>
             </div>
@@ -83,7 +81,7 @@ const Dashboard = () => (
                   <figure className='image level-item'>
                     <img
                       className='is-thumbnail'
-                      src='static/assets/sacbe.png'
+                      src='/assets/sacbe.png'
                     />
                   </figure>
                 </div>
@@ -108,7 +106,7 @@ const Dashboard = () => (
                   <figure className='image level-item'>
                     <img
                       className='is-rounded is-small-thumbnail shadow'
-                      src='static/assets/smart_spend.png'
+                      src='/assets/smart_spend.png'
                     />
                   </figure>
                 </div>
@@ -131,7 +129,7 @@ const Dashboard = () => (
                 <figure className='image level-item'>
                   <img
                     className='is-thumbnail'
-                    src='static/assets/mesereando.png'
+                    src='/assets/mesereando.png'
                   />
                 </figure>
               </div>
@@ -149,7 +147,7 @@ const Dashboard = () => (
                 <figure className='image level-item'>
                   <img
                     className='is-thumbnail'
-                    src='static/assets/md_links.jpg'
+                    src='/assets/md_links.jpg'
                   />
                 </figure>
               </div>
@@ -172,7 +170,7 @@ const Dashboard = () => (
               <figure className='image level-item'>
                 <img
                   className='is-thumbnail'
-                  src='static/assets/steam_desktop.png'
+                  src='/assets/steam_desktop.png'
                 />
               </figure>
               <div className='level-other'>

@@ -1,5 +1,4 @@
-//import React from 'react';
-//import App from 'next/app';
+//import 'bulma-carousel/dist/css/bulma-carousel.min.css';
 
 import Header from '../components/Header';
 import OfflineSupport from '../components/OfflineSupport';

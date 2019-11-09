@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 import Nav from './Nav';
 
@@ -30,35 +30,35 @@ class Carousel extends Component {
           <figure className='has-background item-1'>
             <img
               className='is-background'
-              src='/static/assets/head.png'
+              src='/assets/head.png'
               alt='wallpaper'
             />
           </figure>
           <figure className='image is-3by1 has-background item-2'>
             <img
               className='is-background'
-              src='/static/assets/md_links.jpg'
+              src='/assets/md_links.jpg'
               alt='MD_Links'
             />
           </figure>
           <figure className='image is-3by1 has-background item-3'>
             <img
               className='is-background'
-              src='/static/assets/mesereando.png'
+              src='/assets/mesereando.png'
               alt='Mesereando'
             />
           </figure>
           <figure className='image is-3by1 has-background item-4'>
             <img
               className='is-background'
-              src='/static/assets/sacbe.png'
+              src='/assets/sacbe.png'
               alt='Sacbé'
             />
           </figure>
           <figure className='image is-3by1 has-background item-5'>
             <img
               className='is-background'
-              src='/static/assets/steam_desktop.png'
+              src='/assets/steam_desktop.png'
               alt='Steam-escritorio'
             />
           </figure>

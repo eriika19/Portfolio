@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import 'bulma/css/bulma.min.css';
-import 'bulma-carousel/dist/css/bulma-carousel.min.css';
-
 
 class Nav extends Component {
   constructor(props) {
@@ -42,7 +40,7 @@ class Nav extends Component {
                     ? 'image is-logo is-active'
                     : 'image is-logo'
                 }>
-                <img src='/static/assets/enciso.png' alt='Logo-Enciso' />
+                <img src='/enciso.png' alt='Logo-Enciso' />
               </figure>
             </Link>
             <span

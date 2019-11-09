@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import 'bulma/css/bulma.min.css';
 
 import Hero from '../components/Hero';
 

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Oops = () => (
   <div className='tile is-parent'>
     <article className='tile is-child notification is-danger'>
