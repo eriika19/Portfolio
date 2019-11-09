@@ -1,12 +1,15 @@
 import React from 'react';
 
 const Oops = () => (
-  <div className="card">
-    <div className="card-header">
-      <div className="card-title h3 text-gray">
-        Oops! Looks like you're offline and this page is not cached either. Try again when you're online.
+  <div className='tile is-parent'>
+    <article className='tile is-child notification is-danger'>
+      <p className='title'>Oops!</p>
+      <p className='subtitle'>There is an error...</p>
+      <div className='content'>
+        Looks like you're offline and this page is not cached either. Try again
+        when you're online.
       </div>
-    </div>
+    </article>
   </div>
 );
 

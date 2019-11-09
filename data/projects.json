@@ -1,0 +1,69 @@
+{
+  "projects": [
+    {
+      "id": "0",
+      "title": "Mesereando",
+      "date": "Oct 2019",
+      "tags": ["react", "reactstrap", "react-router"],
+      "description": "react, reactstrap & react-router",
+      "thumbnail": "Mesereando",
+      "src": "/static/mesereando.png",
+      "type": "WPA",
+      "github": "https://github.com/eriika19/MEX008-FE-Burger-Queen",
+      "demo": "https://eriika19.github.io/MEX008-FE-Burger-Queen",
+      "label": ["Ir a repositorio GitHub", "Abrir Demo"]
+    },
+    {
+      "id": "1",
+      "title": "MD-Links",
+      "date": "Sept 2019",
+      "tags": ["node.js", "minimist", "request"],
+      "description": "react, reactstrap & react-router",
+      "thumbnail": "Links",
+      "src": "/static/md_links.jpg",
+      "type": "Librería Node.js",
+      "github": "https://github.com/eriika19/md-links",
+      "demo": "https://github.com/eriika19/md-links#demo",
+      "label": ["Ir a repositorio GitHub", "Abrir Demo"]
+    },
+    {
+      "id": "2",
+      "title": "Sacbé",
+      "date": "Ago 2019",
+      "tags": ["spa", "firebase", "crud", "materialize", "here"],
+      "description": "react, reactstrap & react-router",
+      "thumbnail": "Sacbé",
+      "src": "/static/sacbe.png",
+      "type": "red social",
+      "github": "https://github.com/eriika19/MEX008-social-network",
+      "demo": "https://eriika19.github.io/MEX008-social-network/src/",
+      "label": ["Ir a repositorio GitHub", "Abrir Demo"]
+    },
+    {
+      "id": "3",
+      "title": "Smart Spend",
+      "date": "Jul 2019",
+      "tags": ["javascript", "css", "html", "bootstrap"],
+      "description": "react, reactstrap & react-router",
+      "thumbnail": "SmartSpend",
+      "src": "/static/smart_spend.png",
+      "type": "fintech app",
+      "github": "https://github.com/eriika19/MEX008-hackathon-Interna-SF",
+      "demo": "https://eriika19.github.io/MEX008-hackathon-Interna-SF/src/",
+      "label": ["Ir a repositorio GitHub", "Abrir Demo"]
+    },
+    {
+      "id": "4",
+      "title": "Steam",
+      "date": "Jul 2019",
+      "tags": ["javascript", "css", "html", "bootstrap"],
+      "description": "react, reactstrap & react-router",
+      "thumbnail": "Steam",
+      "src": "/static/steam_desktop.png",
+      "type": "news web app",
+      "github": "https://github.com/eriika19/MEX-Data-Lovers-008",
+      "demo": "https://eriika19.github.io/MEX-Data-Lovers-008/src/",
+      "label": ["Ir a repositorio GitHub", "Abrir Demo"]
+    }
+  ]
+}
