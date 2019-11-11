@@ -67,6 +67,10 @@ class Carousel extends Component {
               .slider-navigation-next {
                 display: none;
               }
+              .is-3by1, .item-0{
+                width: 100%;
+                height: 100%;
+              }
             }
           `}
         </style>

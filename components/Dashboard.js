@@ -6,7 +6,7 @@ const Dashboard = () => (
     <div className='tile is-ancestor'>
       <div className='tile is-vertical'>
         <div className='tile is-parent is-me'>
-          <article className='tile is-child notification is-bold is-pink'>
+          <article className='tile is-child notification is-bold is-pink shadow'>
             <div className='level'>
               <figure className='image level-item'>
                 <img
@@ -34,7 +34,7 @@ const Dashboard = () => (
           </article>
         </div>
         <div className='tile is-parent is-short'>
-          <article className='tile is-child notification is-bold is-orange'>
+          <article className='tile is-child notification is-bold is-orange shadow'>
             <p className='title'>Premios y reconocimientos</p>
           </article>
         </div>
@@ -68,7 +68,7 @@ const Dashboard = () => (
 
       <div className='tile is-vertical is-8'>
         <div className='tile is-parent'>
-          <article className='tile is-child notification is-bold'>
+          <article className='tile is-child notification is-bold is-light shadow'>
             <p className='title'>Proyectos</p>
           </article>
         </div>
@@ -193,6 +193,10 @@ const Dashboard = () => (
           }
           .is-award {
             display: block;
+          }
+          .image img.is-small-thumbnail {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
           }
           .tile.is-me {
             margin-bottom: 1rem;
