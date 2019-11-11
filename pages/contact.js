@@ -8,7 +8,7 @@ const ContactPage = () => (
     <Head>
       <title> Enciso FE | Contacto</title>
     </Head>
-    <Hero pageOpen='contact' />
+    <Hero pageOpen='/contact' />
     <div className='tile is-ancestor'>
       <div className='tile is-parent'>
         <article className='tile is-child notification is-info'>

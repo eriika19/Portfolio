@@ -1,5 +1,6 @@
 //import Oops from '../components/Oops';
-//import Project from '../components/Project';
+import Project from '../components/Project';
+
 const Dashboard = () => (
   <section id='dashboard'>
     <div className='tile is-ancestor'>
@@ -74,104 +75,29 @@ const Dashboard = () => (
         <div className='tile'>
           <div className='tile is-vertical is-5'>
             <div className='tile is-parent'>
-              <article className='tile is-child notification is-bold is-link'>
-                <p className='title'>Sacbé</p>
-                <p className='subtitle'>Red Social (JS, Firebase, SPA)</p>
-                <div className='level'>
-                  <figure className='image level-item'>
-                    <img
-                      className='is-thumbnail'
-                      src='/assets/sacbe.png'
-                    />
-                  </figure>
-                </div>
-                <div className='content has-text-justified'>
-                  Sacbé en una web app mobile-first dirigida a ciclistas de la
-                  CDMX que se enfrentan a distintos contratiempos y peligros
-                  viales. El objetivo es crear una red de que permita a los
-                  ciclistas intercambiar información de interés común; además
-                  cuenta con funcionalidades de alto valor como un directorio,
-                  enfocado a la comunidad, que muestra un mapa con ubicación y
-                  un botón S.O.S. que permite compartir su ubicación, a otros
-                  usuarios, en caso de un percance.
-                </div>
-                <time dateTime='Ago 2019'>Ago 2019</time>
-              </article>
+              <Project id='2' color='is-link' />
             </div>
             <div className='tile is-parent'>
-              <article className='tile is-child notification is-bold is-primary'>
-                <p className='title'>Smart Spend</p>
-                <p className='subtitle'>Aplicación Fintech (JS)</p>
-                <div className='level'>
-                  <figure className='image level-item'>
-                    <img
-                      className='is-rounded is-small-thumbnail shadow'
-                      src='/assets/smart_spend.png'
-                    />
-                  </figure>
-                </div>
-                <div className='content has-text-justified'>
-                  Smart Spend es un aplicación cuya propuesta es impulsar la
-                  cultura finaciera aportando tips y noticias al usuario día a
-                  día; a través de un simpático personaje.
-                </div>
-                <time dateTime='Oct 2019'>Jul 2019</time>
-              </article>
+              <Project
+                id='3'
+                color='is-primary'
+                img='is-rounded is-small-thumbnail'
+              />
             </div>
           </div>
           <div className='tile is-parent is-vertical'>
-            <article className='tile is-child notification is-bold is-wine has-text-white'>
-              <p className='title'>Mesereando</p>
-              <p className='subtitle'>
-                Aplicación progresiva para PYME (React)
-              </p>
-              <div className='level'>
-                <figure className='image level-item'>
-                  <img
-                    className='is-thumbnail'
-                    src='/assets/mesereando.png'
-                  />
-                </figure>
-              </div>
-              <div className='content has-text-justified'>
-                Mesereando es una Progressive Web App diseñada para la eficiente
-                gestión y toma de pedidos de una PYME de servicio de comida
-                rápida.
-              </div>
-              <time dateTime='Oct 2019'>Oct 2019</time>
-            </article>
-            <article className='tile is-child notification is-bold is-light'>
-              <p className='title'>MD-Links</p>
-              <p className='subtitle'>Librería de Node.js (Backend)</p>
-              <div className='level'>
-                <figure className='image level-item'>
-                  <img
-                    className='is-thumbnail'
-                    src='/assets/md_links.jpg'
-                  />
-                </figure>
-              </div>
-              <div className='content has-text-justified'>
-                MD-Links es una librería de Node.js que permite al usuario, a
-                partir de una Interfaz de Línea de Comandos (CLI) o la
-                importación de la función MD-Links, buscar y verificar el status
-                de los links existentes dentro de cualquier archivo Markdown
-                (*.md).
-              </div>
-              <time dateTime='Sep 2019'>Sep 2019</time>
-            </article>
+            <Project id='0' color='is-wine' />
+            <Project id='1' color='is-light' />
           </div>
         </div>
         <div className='tile is-parent'>
-          <article className='tile is-child notification is-bold is-dark'>
+         <Project id='4' color='is-dark' />
+          {/*           <article className='tile is-child notification is-bold is-dark'>
             <p className='title'>Steam News</p>
             <p className='subtitle'>Portal de noticias (JS, API)</p>
             <div className='level'>
               <figure className='image level-item'>
-                <img
-                  className='is-thumbnail'
-                  src='/assets/steam_desktop.png'
-                />
+                <img className='is-thumbnail' src='/assets/steam_desktop.png' />
               </figure>
               <div className='level-other'>
                 <div className='content has-text-justified'>
@@ -185,7 +111,7 @@ const Dashboard = () => (
                 </time>
               </div>
             </div>
-          </article>
+          </article> */}
         </div>
       </div>
     </div>

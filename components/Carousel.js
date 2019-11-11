@@ -24,7 +24,6 @@ class Carousel extends Component {
   }
 
   item() {
-    
     return (
       <figure className='image is-3by1 has-background item-2'>
         <img
@@ -81,8 +80,8 @@ class Carousel extends Component {
         </div>
         <div className='hero-body'>
           <div className='container has-text-centered'>
-            <p className='title is-2 has-text-white'></p>
-            <p className='subtitle is-4 has-text-white'>
+            <p className='title is-2 has-text-white mobile-hide'></p>
+            <p className='subtitle is-4 has-text-white mobile-hide'>
               <br />
             </p>
           </div>
@@ -91,6 +90,11 @@ class Carousel extends Component {
           {`
             .hero.is-dark svg {
               color: #4a4a4a;
+            }
+            @media (max-width: 768px) {
+              .mobile-hide {
+                display: table-column;
+              }
             }
           `}
         </style>

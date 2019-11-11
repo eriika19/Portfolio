@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Link from 'next/link';
 import 'bulma/css/bulma.min.css';
 
+import NavbarItem from './NavbarItem';
+import heroData from '../data/hero';
+
 class Nav extends Component {
   constructor(props) {
     super(props);
@@ -29,17 +32,15 @@ class Nav extends Component {
   };
 
   render() {
+    const data = heroData.navbarItems;
+
     return (
       <nav className='navbar'>
         <div className='container'>
           <div className='navbar-brand'>
             <Link href='/contact'>
               <figure
-                className={
-                  this.state.pageOpen === 'contact'
-                    ? 'image is-logo is-active'
-                    : 'image is-logo'
-                }>
+                className='image is-logo'>
                 <img src='/enciso.png' alt='Logo-Enciso' />
               </figure>
             </Link>
@@ -51,9 +52,9 @@ class Nav extends Component {
               }
               data-target='navbarMenuHeroB'
               onClick={this.toggle}>
-              <span></span>
-              <span></span>
-              <span></span>
+              <span className='has-text-white'></span>
+              <span className='has-text-white'></span>
+              <span className='has-text-white'></span>
             </span>
           </div>
           <div
@@ -61,37 +62,13 @@ class Nav extends Component {
               this.state.navMenuOpen ? 'navbar-menu is-active' : 'navbar-menu'
             }
             id='navbarMenuHeroB'>
-            <div className='navbar-end'>
-              <Link href='/about'>
-                <a
-                  className={
-                    this.state.pageOpen === 'about'
-                      ? 'navbar-item is-active'
-                      : 'navbar-item'
-                  }>
-                  Acerca de mí
-                </a>
-              </Link>
-              <Link href='/contact'>
-                <a
-                  className={
-                    this.state.pageOpen === 'contact'
-                      ? 'navbar-item is-active'
-                      : 'navbar-item'
-                  }>
-                  Contacto
-                </a>
-              </Link>
-              <Link href='/'>
-                <a
-                  className={
-                    this.state.pageOpen === 'home'
-                      ? 'navbar-item is-active'
-                      : 'navbar-item'
-                  }>
-                  Inicio
-                </a>
-              </Link>
+            <div
+              className={
+                this.state.navMenuOpen ? 'navbar-end is-active' : 'navbar-end'
+              }>
+              {data.map((props, i) => (
+                <NavbarItem {...props} key={i} pageOpen={this.state.pageOpen} />
+              ))}
             </div>
           </div>
         </div>
@@ -99,17 +76,28 @@ class Nav extends Component {
           {`
             .navbar-menu {
               background-color: transparent !important;
+              box-shadow: none;
+            }
+            .has-text-white {
+              font-weight: 600;
+            }
+            .navbar-end.is-active {
+              font-weight: 500;
             }
             .is-logo:hover {
               background-color: #292929;
               pointer: cursor;
             }
-            .is-logo.is-active {
-              background-color: #292929;
-            }
             .is-logo img {
               height: 3.03rem;
               width: auto;
+            }
+
+            @media (max-width: 768px) {
+              .is-logo img {
+                height: 2.5rem;
+                width: auto;
+              }
             }
           `}
         </style>
