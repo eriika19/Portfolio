@@ -1,6 +1,7 @@
 import { Component } from 'react';
 
 import Nav from './Nav';
+import heroData from '../data/hero';
 
 class Carousel extends Component {
   componentDidMount() {
@@ -23,60 +24,27 @@ class Carousel extends Component {
     carouselJS();
   }
 
-  item() {
+  createItem(i, src, thumbnail) {
+    const selector = 'image is-3by1 has-background item-';
+
     return (
-      <figure className='image is-3by1 has-background item-2'>
-        <img
-          className='is-background'
-          src='/assets/md_links.jpg'
-          alt='MD_Links'
-        />
+      <figure
+        className={i === 0 ? 'image has-background item-0' : selector + i}>
+        <img className='is-background' src={src} alt={thumbnail} />
       </figure>
     );
   }
 
   render() {
+    const data = heroData.carouselItems;
+
     return (
       <section id='carousel' className='hero is-medium is-dark has-carousel'>
         <div id='carousel-demo' className='hero-carousel'>
-          <figure className='has-background item-1'>
-            <img
-              className='is-background'
-              src='/assets/head.png'
-              alt='wallpaper'
-            />
-          </figure>
-          <figure className='image is-3by1 has-background item-2'>
-            <img
-              className='is-background'
-              src='/assets/md_links.jpg'
-              alt='MD_Links'
-            />
-          </figure>
-          <figure className='image is-3by1 has-background item-3'>
-            <img
-              className='is-background'
-              src='/assets/mesereando.png'
-              alt='Mesereando'
-            />
-          </figure>
-          <figure className='image is-3by1 has-background item-4'>
-            <img
-              className='is-background'
-              src='/assets/sacbe.png'
-              alt='Sacbé'
-            />
-          </figure>
-          <figure className='image is-3by1 has-background item-5'>
-            <img
-              className='is-background'
-              src='/assets/steam_desktop.png'
-              alt='Steam-escritorio'
-            />
-          </figure>
+          {data.map((item, i) => this.createItem(i, item.src, item.thumbnail))}
         </div>
         <div className='hero-head'>
-          <Nav pageOpen='home' />
+          <Nav pageOpen='/' />
         </div>
         <div className='hero-body'>
           <div className='container has-text-centered'>
@@ -94,6 +62,10 @@ class Carousel extends Component {
             @media (max-width: 768px) {
               .mobile-hide {
                 display: table-column;
+              }
+              .slider-navigation-previous,
+              .slider-navigation-next {
+                display: none;
               }
             }
           `}

@@ -81,7 +81,7 @@ const Dashboard = () => (
               <Project
                 id='3'
                 color='is-primary'
-                img='is-rounded is-small-thumbnail'
+                img='is-rounded is-small-thumbnail shadow'
               />
             </div>
           </div>
@@ -91,8 +91,7 @@ const Dashboard = () => (
           </div>
         </div>
         <div className='tile is-parent'>
-         <Project id='4' color='is-dark' />
-          {/*           <article className='tile is-child notification is-bold is-dark'>
+          <article className='tile is-child notification is-bold is-dark'>
             <p className='title'>Steam News</p>
             <p className='subtitle'>Portal de noticias (JS, API)</p>
             <div className='level'>
@@ -111,7 +110,7 @@ const Dashboard = () => (
                 </time>
               </div>
             </div>
-          </article> */}
+          </article>
         </div>
       </div>
     </div>

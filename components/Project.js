@@ -32,7 +32,7 @@ class Project extends Component {
               alt={thumbnail}
             />
           </figure>
-        </div>
+        </div >
         <div className='content has-text-justified'>{overview}</div>
         <time dateTime={date}>{date}</time>
         <style jsx>
