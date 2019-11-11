@@ -23,6 +23,19 @@ class Carousel extends Component {
     carouselJS();
   }
 
+  item() {
+    
+    return (
+      <figure className='image is-3by1 has-background item-2'>
+        <img
+          className='is-background'
+          src='/assets/md_links.jpg'
+          alt='MD_Links'
+        />
+      </figure>
+    );
+  }
+
   render() {
     return (
       <section id='carousel' className='hero is-medium is-dark has-carousel'>

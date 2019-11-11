@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "thumbnail": "MD-Links", "src": "/assets/md_links.jpg" },
+    { "thumbnail": "Meserando", "src": "/assets/mesereando.png" },
+    { "thumbnail": "Sacbé", "src": "/assets/sacbe.png" },
+    { "thumbnail": "Steam-escritorio", "src": "/assets/steam_desktop" }
+  ]
+}

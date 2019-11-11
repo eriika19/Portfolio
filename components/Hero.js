@@ -32,10 +32,10 @@ class Hero extends Component {
         </div>
         <div className='hero-body'>
           <div className='container has-text-centered'>
-            <p className='title is-2 has-text-white'></p>
-            <p className='subtitle is-4 has-text-white'>
+            <p className='title is-2 has-text-white'>
               <br />
             </p>
+            <p className='subtitle is-4 has-text-white'></p>
           </div>
         </div>
       </section>
