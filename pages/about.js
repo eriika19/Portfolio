@@ -9,7 +9,7 @@ const AboutPage = () => (
     <Head>
       <title> Enciso FE | Acerca de mí </title>
     </Head>
-    <Hero pageOpen='about' />
+    <Hero pageOpen='/about' />
     <div className='tile is-ancestor'>
       <div className='tile is-parent'>
         <article className='tile is-child notification is-info'>

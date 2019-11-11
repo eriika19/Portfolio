@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import 'bulma/css/bulma.min.css';
 
 import Hero from '../components/Hero';
 
@@ -9,7 +8,7 @@ const ContactPage = () => (
     <Head>
       <title> Enciso FE | Contacto</title>
     </Head>
-    <Hero pageOpen='contact' />
+    <Hero pageOpen='/contact' />
     <div className='tile is-ancestor'>
       <div className='tile is-parent'>
         <article className='tile is-child notification is-info'>

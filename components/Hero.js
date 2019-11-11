@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 import Nav from './Nav';
 
@@ -22,7 +22,7 @@ class Hero extends Component {
           <figure className='has-background item-1'>
             <img
               className='is-background'
-              src='/static/assets/head.png'
+              src='/assets/head.png'
               alt='wallpaper'
             />
           </figure>
@@ -32,10 +32,9 @@ class Hero extends Component {
         </div>
         <div className='hero-body'>
           <div className='container has-text-centered'>
-            <p className='title is-2 has-text-white'></p>
-            <p className='subtitle is-4 has-text-white'>
-              <br />
+            <p className='title is-2 has-text-white'>
             </p>
+            <p className='subtitle is-4 has-text-white'></p>
           </div>
         </div>
       </section>

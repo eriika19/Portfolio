@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import Router from 'next/router';
 import Head from 'next/head';
 
@@ -27,6 +27,12 @@ class Header extends Component {
           <meta name='theme-color' content='#302ecd' />
           <link rel='manifest' href='/static/manifest.json' />
           <link rel='icon' href='/static/favicon.ico' />
+          <link
+            rel='stylesheet'
+            href='https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css'></link>
+          <link
+            rel='stylesheet'
+            href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css'></link>
           <link
             href='https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700|Satisfy&display=swap'
             rel='stylesheet'></link>
