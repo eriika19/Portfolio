@@ -9,7 +9,7 @@
   "orientation": "portrait",
   "fingerprints": false,
   "inject": false,
-  "start_url": "/",
+  "start_url": ".",
   "ios": {
     "apple-mobile-web-app-title": "Portfolio",
     "apple-mobile-web-app-status-bar-style": "#5755d9"
@@ -17,7 +17,7 @@
   "icons": [
     {
       "src": "static/favicon.ico",
-      "sizes": [96, 128, 192, 256, 384, 512],
+      "sizes": ["96", "128", "192", "256", "384", "512"],
       "destination": "/static"
     }
   ],

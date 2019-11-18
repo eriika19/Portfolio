@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 import Hero from '../components/Hero';
+import ContactForm from '../components/ContactForm';
 
 const ContactPage = () => (
   <section id='contact'>
@@ -20,11 +21,14 @@ const ContactPage = () => (
         </article>
       </div>
     </div>
+    <ContactForm />
     <div className='level-item'>
       <Link href='/'>
         <button className='button is-size-4 is-focused'>Regresar</button>
       </Link>
     </div>
+
+    <div class='is-divider' data-content='O'></div>
   </section>
 );
 

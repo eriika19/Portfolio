@@ -12,6 +12,7 @@ const Dashboard = () => (
                 <img
                   className='is-rounded is-picture shadow'
                   src='/assets/foto.png'
+                  alt='Itzel'
                 />
               </figure>
             </div>
@@ -22,7 +23,7 @@ const Dashboard = () => (
               </em>
             </p>
             <p className='subtitle is-4'>
-              <strong>¿Quién soy?</strong>
+              <strong>¡Hola, soy Itzel Enciso!</strong>
             </p>
             <div className='content has-text-justified'>
               Mujer apasionada por la programación y el desarrollo web, con gran
@@ -47,6 +48,7 @@ const Dashboard = () => (
                 <img
                   className='is-rounded is-small-thumbnail'
                   src='/assets/smart_spend2.png'
+                  alt='smart-spend'
                 />
               </figure>
             </div>
@@ -59,6 +61,7 @@ const Dashboard = () => (
                 <img
                   className='is-rounded is-small-thumbnail'
                   src='/assets/ibm.png'
+                  alt='IBM batch'
                 />
               </figure>
             </div>
@@ -96,7 +99,7 @@ const Dashboard = () => (
             <p className='subtitle'>Portal de noticias (JS, API)</p>
             <div className='level'>
               <figure className='image level-item'>
-                <img className='is-thumbnail' src='/assets/steam_desktop.png' />
+                <img className='is-thumbnail' src='/assets/steam_desktop.png' alt='steam' />
               </figure>
               <div className='level-other'>
                 <div className='content has-text-justified'>

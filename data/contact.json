@@ -1,0 +1,24 @@
+{
+  "network": [
+    {
+      "name": "GitHub",
+      "icon": "fab fa-github",
+      "link": "https://github.com/eriika19"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "fab fa-linkedin",
+      "link": "https://www.linkedin.com/in/itzelenciso/"
+    },
+    {
+      "name": "Twitter",
+      "icon": "fab fa-twitter",
+      "link": "https://twitter.com/pixel_forTI"
+    },
+    {
+      "name": "Correo",
+      "icon": "fas fa-envelope",
+      "link": "https://github.com/eriika19"
+    }
+  ]
+}

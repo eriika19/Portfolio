@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
-import Link from 'next/link';
-import 'bulma/css/bulma.min.css';
+import { Component } from "react";
+import Link from "next/link";
+import "bulma/css/bulma.min.css";
+import "bulma-extensions/bulma-divider/dist/css/bulma-divider.min.css";
 
-import NavbarItem from './NavbarItem';
-import heroData from '../data/hero';
+import NavbarItem from "./NavbarItem";
+import heroData from "../data/hero";
 
 class Nav extends Component {
   constructor(props) {
@@ -12,16 +13,19 @@ class Nav extends Component {
   }
 
   state = {
-    navMenuOpen: '',
-    pageOpen: ''
+    navMenuOpen: "",
+    pageOpen: "",
+    scrolled: ""
   };
 
   componentDidMount() {
-    const { pageOpen } = this.props;
+    const { pageOpen, scrolled } = this.props;
+    console.log(scrolled);
 
     this.setState({
       navMenuOpen: false,
-      pageOpen: pageOpen
+      pageOpen: pageOpen,
+      scrolled: scrolled
     });
   }
 
@@ -33,50 +37,103 @@ class Nav extends Component {
 
   render() {
     const data = heroData.navbarItems;
+    const { scrolled } = this.props;
+    //const { scrolled } = this.state;
 
     return (
-      <nav className='navbar'>
-        <div className='container'>
-          <div className='navbar-brand'>
-            <Link href='/contact'>
-              <figure
-                className='image is-logo'>
-                <img src='/enciso.png' alt='Logo-Enciso' />
-              </figure>
+      <nav
+        className={
+          scrolled === 0
+            ? "navbar is-fixed-top background-change"
+            : "navbar is-fixed-top background-change scrolled"
+        }
+        position={this.state.scrolled}
+      >
+        <div className="container">
+          <div className="navbar-brand">
+            <Link href="#contact">
+              <a
+                className={
+                  scrolled === 0
+                    ? "navbar-item name"
+                    : "navbar-item name scrolled has-text-black"
+                }
+              >
+                Enciso
+              </a>
             </Link>
             <span
               className={
                 this.state.navMenuOpen
-                  ? 'navbar-burger is-active'
-                  : 'navbar-burger'
+                  ? "navbar-burger is-active"
+                  : "navbar-burger"
               }
-              data-target='navbarMenuHeroB'
-              onClick={this.toggle}>
-              <span className='has-text-white'></span>
-              <span className='has-text-white'></span>
-              <span className='has-text-white'></span>
+              data-target="navbarMenuHeroB"
+              onClick={this.toggle}
+            >
+              <span
+                className={
+                  scrolled === 0 ? "has-text-white" : "has-text-black scrolled"
+                }
+              ></span>
+              <span
+                className={
+                  scrolled === 0 ? "has-text-white" : "has-text-black scrolled"
+                }
+              ></span>
+              <span
+                className={
+                  scrolled === 0 ? "has-text-white" : "has-text-black scrolled"
+                }
+              ></span>
             </span>
           </div>
           <div
             className={
-              this.state.navMenuOpen ? 'navbar-menu is-active' : 'navbar-menu'
+              this.state.navMenuOpen ? "navbar-menu is-active" : "navbar-menu"
             }
-            id='navbarMenuHeroB'>
+            id="navbarMenuHeroB"
+          >
             <div
               className={
-                this.state.navMenuOpen ? 'navbar-end is-active' : 'navbar-end'
-              }>
+                this.state.navMenuOpen
+                  ? scrolled === 0
+                    ? "navbar-end background-change is-active"
+                    : "navbar-end background-change is-active scrolled"
+                  : "navbar-end background-change"
+              }
+            >
               {data.map((props, i) => (
-                <NavbarItem {...props} key={i} pageOpen={this.state.pageOpen} />
+                <NavbarItem
+                  {...props}
+                  key={i}
+                  pageOpen={this.state.pageOpen}
+                  scrolled={scrolled}
+                />
               ))}
             </div>
           </div>
         </div>
         <style jsx>
           {`
+            .name {
+              font-weight: 900;
+              font-size: 2.7rem;
+              padding-top: 0;
+            }
             .navbar-menu {
               background-color: transparent !important;
               box-shadow: none;
+            }
+            .scrolled {
+              transition: color 200ms linear;
+              transition: background-color 200ms linear;
+            }
+            .background-change.scrolled {
+              background-color: #fff;
+            }
+            .background-change.is-active.scrolled {
+              font-weight: 500;
             }
             .has-text-white {
               font-weight: 600;
@@ -84,19 +141,11 @@ class Nav extends Component {
             .navbar-end.is-active {
               font-weight: 500;
             }
-            .is-logo:hover {
-              background-color: #292929;
-              pointer: cursor;
-            }
-            .is-logo img {
-              height: 3.03rem;
-              width: auto;
-            }
 
-            @media (max-width: 768px) {
-              .is-logo img {
-                height: 2.5rem;
-                width: auto;
+            @media (max-width: 426px) {
+              .name {
+                font-weight: 900;
+                font-size: 2rem;
               }
             }
           `}
