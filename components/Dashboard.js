@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+
 //import Oops from '../components/Oops';
 import Project from "../components/Project";
 
@@ -22,6 +25,19 @@ const Dashboard = () => (
                 y <strong>busco colaborar</strong> "
               </em>
             </p>
+              <button class="button is-link is-outlined is-medium hvr-icon-drop">
+            <a className="level-item" href="/CV.pdf" download>
+                <span>Descargar CV</span>
+                <span className="icon">
+                  <i className="hvr-icon">
+                    <FontAwesomeIcon
+                      className="fas fa-2x"
+                      icon="file-download"
+                    />
+                  </i>
+                </span>
+            </a>
+              </button>
             <p className="subtitle is-4">
               <strong>¡Hola, soy Itzel Enciso!</strong>
             </p>

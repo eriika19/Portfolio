@@ -10,11 +10,11 @@ import contactData from "../data/contact";
 class Footer extends Component {
   createItem = (i, link, icon, name) => {
     return (
-      <div className="hvr-grow hvr-icon-grow" key={i}>
+      <div className="hvr-grow" key={i}>
         <li className="">
           <a className="show-on-hover" href={link} target="_blank">
             <span className="icon is-medium">
-              <i className="">
+              <i className="hvr-icon">
                 <FontAwesomeIcon className="fas fa-2x" icon={icon} />
               </i>
             </span>
