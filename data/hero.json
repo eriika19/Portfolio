@@ -2,7 +2,7 @@
   "navbarItems": [
     { "page": "Inicio", "route": "/" },
     { "page": "Acerca de mí", "route": "/about" },
-    { "page": "Contacto", "route": "#contact" }
+    { "page": "Contacto", "route": "/contact" }
   ],
   "carouselItems": [
     { "thumbnail": "Laptop-header", "src": "/assets/head.png" },

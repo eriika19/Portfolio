@@ -38,7 +38,6 @@ class Nav extends Component {
   render() {
     const data = heroData.navbarItems;
     const { scrolled } = this.props;
-    //const { scrolled } = this.state;
 
     return (
       <nav
@@ -51,7 +50,7 @@ class Nav extends Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link href="#contact">
+            <Link href="#footer">
               <a
                 className={
                   scrolled === 0

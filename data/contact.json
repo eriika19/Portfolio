@@ -2,22 +2,22 @@
   "network": [
     {
       "name": "GitHub",
-      "icon": "fab fa-github",
+      "icon": ["fab", "github-alt"],
       "link": "https://github.com/eriika19"
     },
     {
       "name": "LinkedIn",
-      "icon": "fab fa-linkedin",
+      "icon": ["fab", "linkedin-in"],
       "link": "https://www.linkedin.com/in/itzelenciso/"
     },
     {
       "name": "Twitter",
-      "icon": "fab fa-twitter",
+      "icon": ["fab", "twitter"],
       "link": "https://twitter.com/pixel_forTI"
     },
     {
       "name": "Correo",
-      "icon": "fas fa-envelope",
+      "icon": "envelope",
       "link": "https://github.com/eriika19"
     }
   ]

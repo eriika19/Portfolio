@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Link from "next/link";
 import Head from "next/head";
 import "bulma-extensions/bulma-timeline/dist/css/bulma-timeline.min.css";

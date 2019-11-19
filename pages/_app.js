@@ -1,8 +1,15 @@
-//import 'bulma-carousel/dist/css/bulma-carousel.min.css';
+import { config, library } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css"; // Import the CSS
+config.autoAddCss = false;
 
-import Header from '../components/Header';
-import OfflineSupport from '../components/OfflineSupport';
-import Footer from '../components/Footer';
+import { faAt, faEnvelope, faFileDownload } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+
+library.add(fab, faAt, faEnvelope, faFileDownload);
+
+import Header from "../components/Header";
+import OfflineSupport from "../components/OfflineSupport";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (

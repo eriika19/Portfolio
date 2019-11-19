@@ -6,10 +6,9 @@ class FooterItem extends Component {
         return (
           <li className="hvr-float-shadow">
             <a className="hvr-grow" href={link} target="_blank">
-              <span>
-                <i className={icon}></i>
-              </span>
-              <span>{name}</span>
+              <FontAwesomeIcon icon={[icon]} />
+              {/* <i className={icon}></i> */}
+              <p>{name}</p>
             </a>
           </li>
         );
