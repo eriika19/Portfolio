@@ -100,7 +100,7 @@ class Project extends Component {
             }
 
             .overlay:hover {
-              opacity: 0.7;
+              opacity: 0.72;
             }
 
             .content-on-hover {
@@ -157,6 +157,9 @@ class Project extends Component {
               }
               .content-on-hover {
                 top: 48%;
+              }
+              .overlay:hover {
+                opacity: 0.8;
               }
             }
           `}

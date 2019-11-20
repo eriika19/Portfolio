@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
 //import Oops from '../components/Oops';
 import Project from "../components/Project";
 
@@ -25,9 +24,13 @@ const Dashboard = () => (
                 y <strong>busco colaborar</strong> "
               </em>
             </p>
-              <button class="button is-link is-outlined is-medium hvr-icon-drop">
-            <a className="level-item" href="/CV.pdf" download>
-                <span>Descargar CV</span>
+            <a
+              className="level-item has-text-link has-text-weight-bold hvr-icon-pulse"
+              href="/CV.pdf"
+              download
+            >
+              <span className="is-size-5">Descargar CV</span>
+              <button class="button is-link is-outlined is-rounded">
                 <span className="icon">
                   <i className="hvr-icon">
                     <FontAwesomeIcon
@@ -36,8 +39,8 @@ const Dashboard = () => (
                     />
                   </i>
                 </span>
-            </a>
               </button>
+            </a>
             <p className="subtitle is-4">
               <strong>¡Hola, soy Itzel Enciso!</strong>
             </p>
@@ -142,7 +145,7 @@ const Dashboard = () => (
                     href="https://github.com/eriika19/MEX-Data-Lovers-008"
                     target="_blank"
                   >
-                    <button className="button is-inverted is-outlined is-link subtitle is-6 is-rounded">
+                    <button className="button is-inverted is-outlined is-link subtitle is-6">
                       GitHub
                     </button>
                   </a>
@@ -151,7 +154,7 @@ const Dashboard = () => (
                     href="https://eriika19.github.io/MEX-Data-Lovers-008/src/"
                     target="_blank"
                   >
-                    <button className="button is-inverted is-outlined is-link subtitle is-6 is-rounded">
+                    <button className="button is-inverted is-outlined is-info subtitle is-6">
                       Abrir Demo
                     </button>
                   </a>
@@ -164,6 +167,9 @@ const Dashboard = () => (
     </div>
     <style jsx>
       {`
+        .is-size-5 {
+          margin-right: 0.5rem;
+        }
         #dashboard {
           margin-top: 1rem;
         }
@@ -206,6 +212,7 @@ const Dashboard = () => (
           margin-bottom: 2rem;
           padding: 0.75rem 0.41rem 0.75rem 0.48rem;
         }
+
         .notification.is-pink {
           background-color: rgb(231, 202, 212, 0.38);
         }
@@ -238,7 +245,7 @@ const Dashboard = () => (
         }
 
         .overlay:hover {
-          opacity: 0.7;
+          opacity: 0.72;
         }
 
         .content-on-hover {
@@ -251,8 +258,11 @@ const Dashboard = () => (
           text-align: center;
           width: inherit;
         }
+        .is-size-5 {
+          color: #3273dc;
+          text-decoration: underline;
+        }
         .notification a:not(.button):not(.dropdown-item) {
-          color: currentColor;
           text-decoration: unset;
         }
         button.subtitle.is-6 {
@@ -268,6 +278,9 @@ const Dashboard = () => (
         }
         .level-item.subtitle {
           margin-bottom: 1%;
+        }
+        .button {
+          border-width: 0.15rem;
         }
         .button.is-link.is-inverted.is-outlined {
           border-width: 0.2rem;
