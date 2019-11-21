@@ -13,16 +13,14 @@ class FirstCard extends Component {
       <div className="card">
         <div className="card-content">
           <div className="media">
-            <div className="media-left">
-              <figure className="image">
+              <figure className="image img-left">
                 <img
                   src="https://unsplash.it/400/300?image=503"
                   className={load || move ? "fadeIn" : "fadedfx"}
                   alt="img-demo"
                 />
               </figure>
-            </div>
-            <div className="media-content">
+            <div className="media-content media-left">
               <p className="title is-4">Biografía </p>
               <p className="subtitle is-6">se trabajó en...</p>
             </div>
@@ -32,6 +30,9 @@ class FirstCard extends Component {
           {`
             .card {
             margin: 1rem auto;
+          }
+            .img-left {
+            margin-right: 1rem;
           }
             .fadedfx {
               background-color: #fe5652;

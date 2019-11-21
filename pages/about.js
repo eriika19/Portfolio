@@ -9,7 +9,6 @@ import FirstCard from "../components/FirstCard";
 import Timeline from "../components/Timeline";
 
 class AboutPage extends Component {
-  
   state = {
     scrolled: "",
     move: "",
@@ -22,7 +21,7 @@ class AboutPage extends Component {
     window.addEventListener("scroll", this.handleMove, true);
     this.setState({
       scrolled: 0,
-      move:false,
+      move: false,
       load: false
     });
   }
@@ -33,16 +32,16 @@ class AboutPage extends Component {
     window.removeEventListener("scroll", this.handleMove);
   }
 
-  handleScroll = () => {   
+  handleScroll = () => {
     this.setState({
-      scrolled: window.scrollY,
+      scrolled: window.scrollY
     });
   };
 
   handleMove = () => {
-    if (window.pageYOffset > 0) {      
+    if (window.pageYOffset > 0) {
       this.setState({
-        move: true,
+        move: true
       });
     }
   };
@@ -69,7 +68,7 @@ class AboutPage extends Component {
         <Hero pageOpen="/about" scrolled={scrolled} />
 
         <div className="container">
-          <FirstCard load={load} move={move}/>
+          <FirstCard load={load} move={move} />
           <div className="card">
             <div className="card-content">
               <div className="media">
@@ -77,15 +76,13 @@ class AboutPage extends Component {
                   <p className="title is-4">Biografía </p>
                   <p className="subtitle is-6">se trabajó en...</p>
                 </div>
-                <div className="media-right">
-                  <figure className="image">
-                    <img
-                      src="https://unsplash.it/400/300?image=503"
-                      className={scrolled === 0 ? "fadedfx" : "fadeIn"}
-                      alt="img-demo"
-                    />
-                  </figure>
-                </div>
+                <figure className="image">
+                  <img
+                    src="https://unsplash.it/400/300?image=503"
+                    className={scrolled === 0 ? "fadedfx" : "fadeIn"}
+                    alt="img-demo"
+                  />
+                </figure>
               </div>
             </div>
           </div>
@@ -93,16 +90,14 @@ class AboutPage extends Component {
           <div className="card">
             <div className="card-content">
               <div className="media">
-                <div className="media-left">
-                  <figure className="image">
-                    <img
-                      src="https://unsplash.it/400/300?image=503"
-                      className={scrolled === 0 ? "fadedfx" : "fadeIn"}
-                      alt="img-demo"
-                    />
-                  </figure>
-                </div>
-                <div className="media-content">
+                <figure className="image img-left">
+                  <img
+                    src="https://unsplash.it/400/300?image=503"
+                    className={scrolled === 0 ? "fadedfx" : "fadeIn"}
+                    alt="img-demo"
+                  />
+                </figure>
+                <div className="media-content media-left">
                   <p className="title is-4">Biografía </p>
                   <p className="subtitle is-6">se trabajó en...</p>
                 </div>
@@ -115,6 +110,9 @@ class AboutPage extends Component {
           {`
           .card {
             margin: 1rem auto;
+          }
+                      .img-left {
+            margin-right: 1rem;
           }
             .fadedfx {
               background-color: #fe5652;
