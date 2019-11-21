@@ -13,7 +13,7 @@ const Dashboard = () => (
               <figure className="image level-item">
                 <img
                   className="is-rounded is-picture shadow"
-                  src="/assets/foto.png"
+                  src="/assets/Itzel_Enciso.jpg"
                   alt="Itzel"
                 />
               </figure>
@@ -24,23 +24,25 @@ const Dashboard = () => (
                 y <strong>busco colaborar</strong> "
               </em>
             </p>
-            <a
-              className="level-item has-text-link has-text-weight-bold hvr-icon-pulse"
-              href="/CV.pdf"
-              download
-            >
-              <span className="is-size-5">Descargar CV</span>
-              <button class="button is-link is-outlined is-rounded">
-                <span className="icon">
-                  <i className="hvr-icon">
-                    <FontAwesomeIcon
-                      className="fas fa-2x"
-                      icon="file-download"
-                    />
-                  </i>
-                </span>
-              </button>
-            </a>
+            <div className="level">
+              <a
+                className="level-item has-text-link has-text-weight-bold hvr-icon-pulse"
+                href="/ENCISO_CV.pdf"
+                download
+              >
+                <span className="is-size-5">Descargar CV</span>
+                <button className="button is-link is-outlined is-rounded">
+                  <span className="icon">
+                    <i className="hvr-icon">
+                      <FontAwesomeIcon
+                        className="fas fa-2x"
+                        icon="file-download"
+                      />
+                    </i>
+                  </span>
+                </button>
+              </a>
+            </div>
             <p className="subtitle is-4">
               <strong>¡Hola, soy Itzel Enciso!</strong>
             </p>
@@ -167,8 +169,14 @@ const Dashboard = () => (
     </div>
     <style jsx>
       {`
+        .level {
+          text-align: -webkit-center;
+        }
         .is-size-5 {
           margin-right: 0.5rem;
+        }
+        .middle {
+          left: 50%;
         }
         #dashboard {
           margin-top: 1rem;

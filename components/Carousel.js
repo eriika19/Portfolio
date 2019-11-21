@@ -12,7 +12,7 @@ class Carousel extends Component {
           slidesToScroll: 1,
           slidesToShow: 1,
           loop: true,
-          autoplay: false,
+          autoplay: true,
           autoplaySpeed: 8000,
           breakpoints: [
             { changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },

@@ -10,9 +10,14 @@ class Home extends Component {
   };
 
   componentDidMount() {
-    this.setState({
-      scrolled: 0
-    });
+    window.addEventListener("scroll", this.handleScroll, true);
+        this.setState({
+          scrolled: 0
+        });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   handleScroll = () => {
@@ -25,7 +30,7 @@ class Home extends Component {
     const { scrolled } = this.state;
 
     return (
-      <section id="home" onWheel={this.handleScroll}>
+      <section id="home">
         <Head>
           <title>Portafolio | Enciso FE</title>
         </Head>
