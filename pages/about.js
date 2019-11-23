@@ -67,64 +67,36 @@ class AboutPage extends Component {
         </Head>
         <Hero pageOpen="/about" scrolled={scrolled} />
 
-        <div className="container">
-          <FirstCard load={load} move={move} />
-          <div className="card">
-            <div className="card-content">
-              <div className="media">
-                <div className="media-content media-left">
-                  <p className="title is-4">Biografía </p>
-                  <p className="subtitle is-6">se trabajó en...</p>
-                </div>
-                <figure className="image">
-                  <img
-                    src="https://unsplash.it/400/300?image=503"
-                    className={scrolled === 0 ? "fadedfx" : "fadeIn"}
-                    alt="img-demo"
-                  />
-                </figure>
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-content">
-              <div className="media">
-                <figure className="image img-left">
-                  <img
-                    src="https://unsplash.it/400/300?image=503"
-                    className={scrolled === 0 ? "fadedfx" : "fadeIn"}
-                    alt="img-demo"
-                  />
-                </figure>
-                <div className="media-content media-left">
-                  <p className="title is-4">Biografía </p>
-                  <p className="subtitle is-6">se trabajó en...</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div id="main" className="level">
+          <figure className="image level-item">
+            <img className="" src="/assets/construction.jpg" alt="dev" />
+          </figure>
         </div>
 
         <style jsx>
           {`
-          .card {
-            margin: 1rem auto;
-          }
-                      .img-left {
-            margin-right: 1rem;
-          }
-            .fadedfx {
-              background-color: #fe5652;
-              opacity:0;
-              visibility: hidden;
+            .card {
+              margin: 1rem auto;
+            }
+            .img-left {
+              margin-right: 1rem;
             }
 
-            .fadeIn {
-              visibility: visible;
-              transition: all 2s ease-in-out;
-              opacity: 1;
+            .image img {
+              width: auto;
             }
+
+              .fadedfx {
+                background-color: #fe5652;
+                opacity: 0;
+                visibility: hidden;
+              }
+
+              .fadeIn {
+                visibility: visible;
+                transition: all 2s ease-in-out;
+                opacity: 1;
+              }
             }
           `}
         </style>

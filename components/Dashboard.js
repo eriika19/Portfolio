@@ -13,7 +13,7 @@ const Dashboard = () => (
               <figure className="image level-item">
                 <img
                   className="is-rounded is-picture shadow"
-                  src="/assets/Itzel_Enciso.jpg"
+                  src="/assets/Itzel_Enciso.png"
                   alt="Itzel"
                 />
               </figure>
