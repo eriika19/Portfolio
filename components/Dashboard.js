@@ -122,7 +122,7 @@ const Dashboard = () => (
               <figure className="image level-item">
                 <img
                   className="is-thumbnail"
-                  src="/assets/steam_desktop.png"
+                  src="/assets/steam_mobile.png"
                   alt="steam"
                 />
               </figure>
@@ -133,7 +133,7 @@ const Dashboard = () => (
                   portal STEAM, una popular plataforma de distribución de
                   videojuegos.
                 </div>
-                <time className="content" dateTime="Jul 2019">
+                <time className="content level-left" dateTime="Jul 2019">
                   Jul 2019
                 </time>
               </div>
