@@ -1,0 +1,24 @@
+{
+  "network": [
+    {
+      "name": "GitHub",
+      "icon": ["fab", "github-alt"],
+      "link": "https://github.com/eriika19"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": ["fab", "linkedin-in"],
+      "link": "https://www.linkedin.com/in/itzelenciso/"
+    },
+    {
+      "name": "Twitter",
+      "icon": ["fab", "twitter"],
+      "link": "https://twitter.com/pixel_forTI"
+    },
+    {
+      "name": "Correo",
+      "icon": "envelope",
+      "link": "mailto:enciso.iq@gmail.com?subject=Reclutamiento&body=¡Buen día! el motivo de contacto es:"
+    }
+  ]
+}

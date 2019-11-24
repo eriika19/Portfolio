@@ -2,13 +2,12 @@
   "navbarItems": [
     { "page": "Inicio", "route": "/" },
     { "page": "Acerca de mí", "route": "/about" },
-    { "page": "Contacto", "route": "/contact" }
+    { "page": "Contacto", "route": "#footer" }
   ],
   "carouselItems": [
     { "thumbnail": "Laptop-header", "src": "/assets/head.png" },
     { "thumbnail": "MD-Links", "src": "/assets/md_links.jpg" },
-    { "thumbnail": "Meserando", "src": "/assets/mesereando.png" },
     { "thumbnail": "Sacbé", "src": "/assets/sacbe.png" },
-    { "thumbnail": "Steam-escritorio", "src": "/assets/steam_desktop" }
+    { "thumbnail": "Steam-escritorio", "src": "/assets/steam_desktop.png" }
   ]
 }

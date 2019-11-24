@@ -1,35 +1,109 @@
-import Link from 'next/link';
-import Head from 'next/head';
+import { Component } from "react";
+//import Router from "next/router";
+import Link from "next/link";
+import Head from "next/head";
+import "bulma-extensions/bulma-timeline/dist/css/bulma-timeline.min.css";
 
-import Hero from '../components/Hero';
+import Hero from "../components/Hero";
+import FirstCard from "../components/FirstCard";
+import Timeline from "../components/Timeline";
 
-const AboutPage = () => (
-  // ({ title, date, tags, description, thumbnail, type, github, demo, label }) =>
-  <section id='about'>
-    <Head>
-      <title> Enciso FE | Acerca de mí </title>
-    </Head>
-    <Hero pageOpen='/about' />
-    <div className='tile is-ancestor'>
-      <div className='tile is-parent'>
-        <article className='tile is-child notification is-info'>
-          <p className='title'>Enciso FE | Acerca de mí</p>
-          <p className='subtitle'>Acerca de mí</p>
-          <div className='content'>
-            Aquí hablaré de mí, mis intereses y timeline de desarrollo
-            académico. Metodologías utilizadas, soft skills y tech skills;
-            además de un icono para descargar CV en formato PDF.
-          </div>
-        </article>
-      </div>
-    </div>
-    <div className='level-item'>
-      <Link href='/'>
-        <button className='button is-size-4 is-focused'>Regresar</button>
-      </Link>
-    </div>
-  </section>
-);
+class AboutPage extends Component {
+  state = {
+    scrolled: "",
+    move: "",
+    load: ""
+  };
+
+  componentDidMount() {
+    window.addEventListener("load", this.handleLoad, true);
+    window.addEventListener("scroll", this.handleScroll, true);
+    window.addEventListener("scroll", this.handleMove, true);
+    this.setState({
+      scrolled: 0,
+      move: false,
+      load: false
+    });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("load", this.handleLoad);
+    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener("scroll", this.handleMove);
+  }
+
+  handleScroll = () => {
+    this.setState({
+      scrolled: window.scrollY
+    });
+  };
+
+  handleMove = () => {
+    if (window.pageYOffset > 0) {
+      this.setState({
+        move: true
+      });
+    }
+  };
+
+  handleLoad = () => {
+    setTimeout(
+      () =>
+        this.setState({
+          load: true
+        }),
+      500
+    );
+  };
+
+  render() {
+    // ({ title, date, tags, description, thumbnail, type, github, demo, label }) =>
+    const { scrolled, load, move } = this.state;
+
+    return (
+      <section id="about">
+        <Head>
+          <title> Enciso FE | Acerca de mí </title>
+        </Head>
+        <Hero pageOpen="/about" scrolled={scrolled} />
+
+        <div id="main" className="level">
+          <figure className="image level-item">
+            <img className="" src="/assets/construction.jpg" alt="dev" />
+          </figure>
+        </div>
+
+        <style jsx>
+          {`
+            .card {
+              margin: 1rem auto;
+            }
+            .img-left {
+              margin-right: 1rem;
+            }
+
+            .image img {
+              width: auto;
+            }
+
+              .fadedfx {
+                background-color: #fe5652;
+                opacity: 0;
+                visibility: hidden;
+              }
+
+              .fadeIn {
+                visibility: visible;
+                transition: all 2s ease-in-out;
+                opacity: 1;
+              }
+            }
+          `}
+        </style>
+      </section>
+    );
+  }
+}
 
 /* ProjectPage.getInitialProps = ({ query: { id } }) => {
   const data = ProjectData.projects[id];

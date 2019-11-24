@@ -13,6 +13,7 @@ class Carousel extends Component {
           slidesToShow: 1,
           loop: true,
           autoplay: true,
+          autoplaySpeed: 8000,
           breakpoints: [
             { changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },
             { changePoint: 640, slidesToShow: 1, slidesToScroll: 1 },
@@ -28,7 +29,7 @@ class Carousel extends Component {
     const selector = 'image is-3by1 has-background item-';
 
     return (
-      <figure
+      <figure key={i}
         className={i === 0 ? 'image has-background item-0' : selector + i}>
         <img className='is-background' src={src} alt={thumbnail} />
       </figure>
@@ -37,35 +38,72 @@ class Carousel extends Component {
 
   render() {
     const data = heroData.carouselItems;
+    const { scrolled } = this.props;
 
     return (
-      <section id='carousel' className='hero is-medium is-dark has-carousel'>
-        <div id='carousel-demo' className='hero-carousel'>
+      <section id="carousel" className="hero is-medium has-carousel is-custom">
+        <div id="carousel-demo" className="hero-carousel">
           {data.map((item, i) => this.createItem(i, item.src, item.thumbnail))}
         </div>
-        <div className='hero-head'>
-          <Nav pageOpen='/' />
+        <div className="hero-head">
+          <Nav pageOpen="/" scrolled={scrolled}/>
         </div>
-        <div className='hero-body'>
-          <div className='container has-text-centered'>
-            <p className='title is-2 has-text-white mobile-hide'></p>
-            <p className='subtitle is-4 has-text-white mobile-hide'>
+        <div className="hero-body">
+          <div className="container has-text-centered">
+            <p className="title is-2 has-text-white">
+              <br />
+            </p>
+            <p className="subtitle is-6 has-text-white hide">
+              <br />
               <br />
             </p>
           </div>
         </div>
         <style jsx global>
           {`
-            .hero.is-dark svg {
+            .navbar-menu {
+              padding: 0;
+            }
+            .hero.is-custom,
+            .hero.is-custom a {
+              color: #fff;
+            }
+
+            .hero.is-custom svg {
               color: #4a4a4a;
             }
+            a.navbar-item.is-active {
+              background-color: #0a0a0a !important;
+            }
+            a.navbar-item:hover {
+              // background-color: #0a0a0a !important;
+              background-color: #292929 !important;
+            }
+            .hide {
+              display: none;
+            }
+            a.has-text-black:hover {
+              color: #fff !important;
+            }
+
+            @media (max-width: 1087px) {
+            }
             @media (max-width: 768px) {
-              .mobile-hide {
-                display: table-column;
+              #carousel {
+                width: 101%;
               }
+
               .slider-navigation-previous,
               .slider-navigation-next {
                 display: none;
+              }
+              .hide {
+                display: block;
+              }
+              .is-3by1,
+              .item-0 {
+                width: 100%;
+                height: 100%;
               }
             }
           `}
