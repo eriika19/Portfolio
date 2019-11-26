@@ -16,7 +16,7 @@
       ],
       "thumbnail": "Mesereando",
       "src": "/assets/mesereando.png",
-      "type": "WPA",
+      "type": "PWA",
       "github": "https://github.com/eriika19/MEX008-FE-Burger-Queen",
       "demo": "https://eriika19.github.io/MEX008-FE-Burger-Queen",
       "label": ["Ir a repositorio GitHub", "Abrir Demo"]

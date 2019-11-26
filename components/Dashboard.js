@@ -1,4 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
+
 
 //import Oops from '../components/Oops';
 import Project from "../components/Project";
@@ -47,11 +50,11 @@ const Dashboard = () => (
               <strong>¡Hola, soy Itzel Enciso!</strong>
             </p>
             <div className="content has-text-justified">
-              Mujer apasionada por la programación y el desarrollo web, con gran
-              interés en desarrollarme dentro de un equipo colaborativo que
-              fomente el aprendizaje, la comunicación efectiva y el crecimiento
-              profesional. Con experiencia en auditorías además de aplicación de
-              sistemas y herramientas de gestión de calidad.
+              Mujer apasionada por la programación y el desarrollo web. Busco
+              aprender y desarrollar al máximo mis aptitudes como desarrolladora
+              web para eventualmente liderar un equipo donde se fomente la
+              comunicación efectiva y el trabajo bajo metodologías Agile. Con
+              experiencia en gestión de calidad y sus herramientas.
             </div>
           </article>
         </div>
@@ -91,84 +94,96 @@ const Dashboard = () => (
       </div>
 
       <div className="tile is-vertical is-8">
-        <div className="tile is-parent">
+        <Fade bottom>
+          <div>
+            <h1 className="title is-1 has-text-weight-bold">Proyectos</h1>
+          </div>
+        </Fade>
+        {/*         <div className="tile is-parent">
           <article className="tile is-child notification is-bold is-light shadow">
             <p className="title">Proyectos</p>
           </article>
-        </div>
-        <div className="tile">
-          <div className="tile is-vertical is-5">
-            <div className="tile is-parent">
-              <Project id="2" color="is-link" />
-            </div>
-            <div className="tile is-parent">
-              <Project
-                id="3"
-                color="is-primary"
-                img="is-rounded is-small-thumbnail shadow"
-              />
-            </div>
-          </div>
-          <div className="tile is-parent is-vertical">
-            <Project id="0" color="is-wine" />
-            <Project id="1" color="is-light" />
-          </div>
-        </div>
-        <div className="tile is-parent">
-          <article className="tile is-child notification is-bold is-dark">
-            <p className="title">Steam News</p>
-            <p className="subtitle">Portal de noticias (JS, API)</p>
-            <div className="level">
-              <figure className="image level-item">
-                <img
-                  className="is-thumbnail"
-                  src="/assets/steam_mobile.png"
-                  alt="steam"
+        </div> */}
+        <Zoom cascade>
+          <div className="tile">
+            <div className="tile is-vertical is-5">
+              <div className="tile is-parent">
+                <Project id="2" color="is-link" />
+              </div>
+              <div className="tile is-parent">
+                <Project
+                  id="3"
+                  color="is-primary"
+                  img="is-rounded is-small-thumbnail shadow"
                 />
-              </figure>
-              <div className="level-other">
-                <div className="content has-text-justified">
-                  Steam News es un portal de noticias para Gamers. Una
-                  Aplicación Web responsiva que hace uso de la base de datos del
-                  portal STEAM, una popular plataforma de distribución de
-                  videojuegos.
-                </div>
-                <time className="content level-left" dateTime="Jul 2019">
-                  Jul 2019
-                </time>
               </div>
             </div>
-            <div className="overlay show-on-hover">
-              <div className="content-on-hover">
-                <p className="over title is-1 has-text-white">Steam</p>
-                <div className="level">
-                  <a
-                    className="level-item over"
-                    href="https://github.com/eriika19/MEX-Data-Lovers-008"
-                    target="_blank"
-                  >
-                    <button className="button is-inverted is-outlined is-link subtitle is-6">
-                      GitHub
-                    </button>
-                  </a>
-                  <a
-                    className="level-item"
-                    href="https://eriika19.github.io/MEX-Data-Lovers-008/src/"
-                    target="_blank"
-                  >
-                    <button className="button is-inverted is-outlined is-info subtitle is-6">
-                      Abrir Demo
-                    </button>
-                  </a>
+            <div className="tile is-parent is-vertical">
+              <Project id="0" color="is-wine" />
+              <Project id="1" color="is-light" />
+            </div>
+          </div>
+        </Zoom>
+        <Zoom cascade>
+          <div className="tile is-parent">
+            <article className="tile is-child notification is-bold is-dark">
+              <p className="title">Steam News</p>
+              <p className="subtitle">Portal de noticias (JS, API)</p>
+              <div className="level">
+                <figure className="image level-item">
+                  <img
+                    className="is-thumbnail is-steam"
+                    src="/assets/steam_mobile.png"
+                    alt="steam"
+                  />
+                </figure>
+                <div className="level-other">
+                  <div className="content has-text-justified">
+                    Steam News es un portal de noticias para Gamers. Una
+                    Aplicación Web responsiva que hace uso de la base de datos
+                    del portal STEAM, una popular plataforma de distribución de
+                    videojuegos.
+                  </div>
+                  <time className="content level-left" dateTime="Jul 2019">
+                    Jul 2019
+                  </time>
                 </div>
               </div>
-            </div>
-          </article>
-        </div>
+              <div className="overlay show-on-hover">
+                <div className="content-on-hover">
+                  <p className="over title is-1 has-text-white">Steam</p>
+                  <div className="level">
+                    <a
+                      className="level-item over"
+                      href="https://github.com/eriika19/MEX-Data-Lovers-008"
+                      target="_blank"
+                    >
+                      <button className="button is-inverted is-outlined is-link subtitle is-6">
+                        GitHub
+                      </button>
+                    </a>
+                    <a
+                      className="level-item"
+                      href="https://eriika19.github.io/MEX-Data-Lovers-008/src/"
+                      target="_blank"
+                    >
+                      <button className="button is-inverted is-outlined is-info subtitle is-6">
+                        Abrir Demo
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </Zoom>
       </div>
     </div>
     <style jsx>
       {`
+        .is-1 {
+          padding: 0.75rem;
+        }
         .level {
           text-align: -webkit-center;
         }
@@ -185,16 +200,18 @@ const Dashboard = () => (
           margin: 1.5rem 0 2.5rem 0;
         }
         .image img.is-picture {
-          width: 18rem;
+          width: 15rem;
           height: auto;
           margin-top: 1rem;
         }
         .image img.is-thumbnail {
-          height: 13rem;
-          width: auto;
           border-radius: 0.45rem;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
             0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .image img.is-steam {
+          height: 11rem;
+          width: auto;
         }
         .shadow {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),

@@ -1,3 +1,100 @@
 {
-"overview":""
+"overview": "Mujer apasionada por la programación y el desarrollo web. Busco aprender y desarrollar al máximo mis aptitudes como desarrolladora web para eventualmente liderar un equipo donde se fomente la comunicación efectiva y el trabajo bajo metodologías Agile. Con experiencia en gestión de calidad y sus herramientas",
+
+"tech": [
+{
+    "src": "/assets/icons/html-5.png",
+    "text": "HTML5"
+},
+{
+  "src": "/assets/icons/css.png",
+  "text": "CSS"
+},
+{
+  "src": "/assets/icons/js.png",
+  "text": "JavaScript"
+},
+{
+  "src": "/assets/icons/react.png",
+  "text": "React"
+},
+{
+  "src": "/assets/icons/maquetacion.png",
+  "text": "Maquetación"
+},
+{
+  "src": "/assets/icons/data.png",
+  "text": "Manejo de data"
+},
+{
+  "src": "/assets/icons/responsive.png",
+  "text": "Responsivo"
+},
+{
+  "src": "/assets/icons/chemical.png",
+  "text": "Química"
+},
+{
+  "src": "/assets/icons/solving.png",
+  "text": "Extrapolación"
+}
+],
+
+"soft": [
+{
+  "src": "/assets/icons/leadership.png",
+  "text": "Liderazgo"
+},
+{
+  "src": "/assets/icons/arquitecture.png",
+  "text": "Arquitectura de proyectos"
+},
+{
+  "src": "/assets/icons/comunication.png",
+  "text": "Colaboración"
+},
+{
+  "src": "/assets/icons/public.png",
+  "text": "Presentación en Público"
+}
+],
+
+"interest": [
+{
+  "src": "/assets/icons/dance.png",
+  "text": "Baile"
+},
+{
+  "src": "/assets/icons/swim.png",
+  "text": "Natación"
+},
+{
+  "src": "/assets/icons/yoga.png",
+  "text": "Meditación"
+},
+{
+  "src": "/assets/icons/meditation.png",
+  "text": "Meditación"
+},
+{
+  "src": "/assets/icons/sea-life.png",
+  "text": "Vida Marina"
+},
+{
+  "src": "/assets/icons/planet.png",
+  "text": "Medio Ambiente"
+},
+{
+  "src": "/assets/icons/nature.png",
+  "text": "Madre Tierra"
+},
+{
+  "src": "/assets/icons/write.png",
+  "text": "Escritura terapéutica"
+},
+{
+  "src": "/assets/icons/teamwork.png",
+  "text": "Comunidad"
+}
+]
 }

@@ -1,18 +1,19 @@
-import { Component } from 'react';
+import { Component } from "react";
+import Link from "next/link";
 
-import Nav from './Nav';
-import heroData from '../data/hero';
+import Nav from "./Nav";
+import heroData from "../data/hero";
 
 class Carousel extends Component {
   componentDidMount() {
     const carouselJS = () => {
-      if (typeof window !== 'undefined') {
-        const bulmaCarousel = require('bulma-carousel');
-        bulmaCarousel.attach('#carousel-demo', {
+      if (typeof window !== "undefined") {
+        const bulmaCarousel = require("bulma-carousel");
+        bulmaCarousel.attach("#carousel-demo", {
           slidesToScroll: 1,
           slidesToShow: 1,
           loop: true,
-          autoplay: true,
+          autoplay: false,
           autoplaySpeed: 8000,
           breakpoints: [
             { changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },
@@ -25,13 +26,24 @@ class Carousel extends Component {
     carouselJS();
   }
 
-  createItem(i, src, thumbnail) {
-    const selector = 'image is-3by1 has-background item-';
+  createItem(i, src, thumbnail, url) {
+    const selector = "image is-3by1 has-background item-";
 
-    return (
-      <figure key={i}
-        className={i === 0 ? 'image has-background item-0' : selector + i}>
-        <img className='is-background' src={src} alt={thumbnail} />
+    return url ? (
+      <Link href={url}>
+        <figure
+          key={i}
+          className={i === 0 ? "image has-background item-0" : selector + i}
+        >
+          <img className="is-background" src={src} alt={thumbnail} />
+        </figure>
+      </Link>
+    ) : (
+      <figure
+        key={i}
+        className={i === 0 ? "image has-background item-0" : selector + i}
+      >
+        <img className="is-background" src={src} alt={thumbnail} />
       </figure>
     );
   }
@@ -46,7 +58,7 @@ class Carousel extends Component {
           {data.map((item, i) => this.createItem(i, item.src, item.thumbnail))}
         </div>
         <div className="hero-head">
-          <Nav pageOpen="/" scrolled={scrolled}/>
+          <Nav pageOpen="/" scrolled={scrolled} />
         </div>
         <div className="hero-body">
           <div className="container has-text-centered">
