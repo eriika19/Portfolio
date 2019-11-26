@@ -1,19 +1,19 @@
-import React, { Component, Fragment } from 'react';
-import Fade from 'react-reveal/Fade'
+import React, { Component, Fragment } from "react";
+import Fade from "react-reveal/Fade";
 import "hover.css/css/hover-min.css";
 
 class Block extends Component {
   createItem = (i, src, text) => {
-      return (
-        <Fade bottom>
-          <div className="column" key={i}>
-            <figure className="icon is-large hvr-grow">
-              <img className="hvr-icon" src={src} alt={text} />
-            </figure>
-            <p className="">{text}</p>
-          </div>
-        </Fade>
-      );
+    return (
+      <Fade bottom>
+        <div className="column" key={i}>
+          <figure className="icon is-large hvr-grow">
+            <img className="hvr-icon" src={src} alt={text} />
+          </figure>
+          <p className="">{text}</p>
+        </div>
+      </Fade>
+    );
   };
 
   render() {
@@ -52,4 +52,4 @@ class Block extends Component {
   }
 }
 
-export default Block
+export default Block;

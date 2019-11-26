@@ -2,8 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
-
-//import Oops from '../components/Oops';
 import Project from "../components/Project";
 
 const Dashboard = () => (
@@ -49,13 +47,15 @@ const Dashboard = () => (
             <p className="subtitle is-4">
               <strong>¡Hola, soy Itzel Enciso!</strong>
             </p>
-            <div className="content has-text-justified">
-              Mujer apasionada por la programación y el desarrollo web. Busco
-              aprender y desarrollar al máximo mis aptitudes como desarrolladora
-              web para eventualmente liderar un equipo donde se fomente la
-              comunicación efectiva y el trabajo bajo metodologías Agile. Con
-              experiencia en gestión de calidad y sus herramientas.
-            </div>
+            <Fade big cascade>
+              <div className="content has-text-justified">
+                Mujer apasionada por la programación y el desarrollo web. Busco
+                aprender y desarrollar al máximo mis aptitudes como
+                desarrolladora web para eventualmente liderar un equipo donde se
+                fomente la comunicación efectiva y el trabajo bajo metodologías
+                Agile. Con experiencia en gestión de calidad y sus herramientas.
+              </div>
+            </Fade>
           </article>
         </div>
         <div className="tile is-parent is-short">
