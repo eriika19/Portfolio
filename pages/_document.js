@@ -16,7 +16,7 @@ class MyDocument extends Document {
           <style jsx global>
             {`
               body {
-                font-family: 'Quicksand', sans-serif;
+                font-family: 'Quicksand', sans-serif !important;
                 font-weight: 500 !important;
               }
               a {

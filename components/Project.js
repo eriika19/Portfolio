@@ -55,7 +55,7 @@ class Project extends Component {
         <style jsx>
           {`
             .image img.is-thumbnail {
-              height: 13rem;
+              height: 12rem;
               width: auto;
               border-radius: 0.45rem;
               box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),

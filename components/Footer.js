@@ -1,10 +1,8 @@
 import { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//import { renderEmail } from "react-html-email";
+import Fade from "react-reveal/Fade";
 import "hover.css/css/hover-min.css";
 
-//import InlineLink from "./inlineLink";
-//import MyLink from "./email";
 import contactData from "../data/contact";
 
 class Footer extends Component {
@@ -29,20 +27,30 @@ class Footer extends Component {
     const data = contactData.network;
 
     return (
-      <footer id="footer" className="footer">
-        <div className="tabs is-centered">
-          <ul>
-            {data.map((item, i) =>
-              this.createItem(i, item.link, item.icon, item.name)
-            )}
-          </ul>
-        </div>
+      <footer id="footer" className="footer ">
+        <Fade top>
+          <h4 className="subtitle is-4 has-text-centered has-text-weight-bold">
+            Contáctame
+          </h4>
+
+          <div className="tabs is-centered">
+            <ul>
+              {data.map((item, i) =>
+                this.createItem(i, item.link, item.icon, item.name)
+              )}
+            </ul>
+          </div>
+        </Fade>
         <style jsx global>
           {`
             .footer {
               margin-top: 3px;
               border-top-color: #dbdbdb;
               border-top-style: solid;
+            }
+            h4.subtitle.is-4 {
+              margin-bottom: 2.5rem;
+              margin-top: -1rem;
             }
             .tabs ul {
               border-bottom-style: inherit;

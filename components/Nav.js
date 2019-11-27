@@ -1,7 +1,6 @@
 import { Component } from "react";
 import Link from "next/link";
 import "bulma/css/bulma.min.css";
-import "bulma-extensions/bulma-divider/dist/css/bulma-divider.min.css";
 
 import NavbarItem from "./NavbarItem";
 import heroData from "../data/hero";
@@ -119,6 +118,7 @@ class Nav extends Component {
               font-weight: 900;
               font-size: 2.7rem;
               padding-top: 0;
+              font-family: BlinkMacSystemFont, -apple-system, "Segoe UI" !important;
             }
             .navbar-menu {
               background-color: transparent !important;
