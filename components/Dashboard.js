@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
@@ -25,36 +25,31 @@ const Dashboard = () => (
                 y <strong>busco colaborar</strong> "
               </em>
             </p>
-            <div className="level">
-              <a
-                className="level-item has-text-link has-text-weight-bold hvr-icon-pulse"
-                href="/ENCISO_CV.pdf"
-                download
-              >
-                <span className="is-size-5">Descargar CV</span>
-                <button className="button is-link is-outlined is-rounded">
-                  <span className="icon">
-                    <i className="hvr-icon">
-                      <FontAwesomeIcon
-                        className="fas fa-2x"
-                        icon="file-download"
-                      />
-                    </i>
-                  </span>
-                </button>
-              </a>
-            </div>
             <p className="subtitle is-4">
               <strong>¡Hola, soy Itzel Enciso!</strong>
             </p>
-            <Fade big cascade>
               <div className="content has-text-justified">
-                Mujer apasionada por la programación y el desarrollo web. Busco
+                Mujer apasionada por la programación. Busco
                 aprender y desarrollar al máximo mis aptitudes como
                 desarrolladora web para eventualmente liderar un equipo donde se
                 fomente la comunicación efectiva y el trabajo bajo metodologías
                 Agile. Con experiencia en gestión de calidad y sus herramientas.
               </div>
+            <Fade top>
+            <div className="columns">
+                          <div className="column">
+              <a
+                className="hvr-grow hvr-underline-from-center has-text-weight-bold is-size-4"
+                href="/ItzelE_CV.pdf"
+                download
+              >
+                          <figure className="icon is-large">
+            <img className="" src="/assets/icons/cv.png" alt="CV" />
+          <p className="cv">CV</p>
+          </figure>
+              </a>
+            </div>
+            </div>
             </Fade>
           </article>
         </div>
@@ -99,11 +94,6 @@ const Dashboard = () => (
             <h1 className="title is-1 has-text-weight-bold">Proyectos</h1>
           </div>
         </Fade>
-        {/*         <div className="tile is-parent">
-          <article className="tile is-child notification is-bold is-light shadow">
-            <p className="title">Proyectos</p>
-          </article>
-        </div> */}
         <Zoom cascade>
           <div className="tile">
             <div className="tile is-vertical is-5">
@@ -181,6 +171,21 @@ const Dashboard = () => (
     </div>
     <style jsx>
       {`
+      p.cv {
+        margin-top: -1rem;
+        color: chocolate;
+      }
+            .column {
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              padding: 0;
+            }
+                  .icon.is-large {
+                    width: 5rem;
+                    height: 5rem;
+                    display: inline-block;
+                  }
         .is-1 {
           padding: 0.75rem;
         }
