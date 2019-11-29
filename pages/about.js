@@ -8,26 +8,18 @@ import aboutData from "../data/about.json";
 
 class AboutPage extends Component {
   state = {
-    scrolled: "",
-    move: "",
-    load: ""
+    scrolled: ""
   };
 
   componentDidMount() {
-    window.addEventListener("load", this.handleLoad, true);
     window.addEventListener("scroll", this.handleScroll, true);
-    window.addEventListener("scroll", this.handleMove, true);
     this.setState({
-      scrolled: 0,
-      move: false,
-      load: false
+      scrolled: 0
     });
   }
 
   componentWillUnmount() {
-    window.removeEventListener("load", this.handleLoad);
     window.removeEventListener("scroll", this.handleScroll);
-    window.removeEventListener("scroll", this.handleMove);
   }
 
   handleScroll = () => {
@@ -36,27 +28,8 @@ class AboutPage extends Component {
     });
   };
 
-  handleMove = () => {
-    if (window.pageYOffset > 0) {
-      this.setState({
-        move: true
-      });
-    }
-  };
-
-  handleLoad = () => {
-    setTimeout(
-      () =>
-        this.setState({
-          load: true
-        }),
-      500
-    );
-  };
-
   render() {
-    // ({ title, date, tags, description, thumbnail, type, github, demo, label }) =>
-    const { scrolled, load, move } = this.state;
+    const { scrolled } = this.state;
 
     return (
       <section id="about">
@@ -90,8 +63,8 @@ class AboutPage extends Component {
         </div>
         <style jsx>
           {`
-                      .container {
-                margin-top: 3rem; 
+            .container {
+               margin-top: 3rem; 
             }
             .card {
               margin: 1rem auto;
@@ -102,22 +75,12 @@ class AboutPage extends Component {
             .image img {
               width: auto;
             }
-a.cv {
-  margin-top: 1.5rem;
-}
-                  p.cv {
-        margin-top: -1rem;
-        margin-bottom: 1rem;
-      }
-              .fadedfx {
-                background-color: #fe5652;
-                opacity: 0;
-                visibility: hidden;
-              }
-              .fadeIn {
-                visibility: visible;
-                transition: all 2s ease-in-out;
-                opacity: 1;
+            a.cv {
+              margin-top: 1.5rem;
+            }
+            p.cv {
+              margin-top: -1rem;
+              margin-bottom: 1rem;
               }
             }
           `}

@@ -3,6 +3,7 @@ import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
 import Project from "../components/Project";
+import aboutData from "../data/about";
 
 const Dashboard = () => (
   <section id="dashboard">
@@ -28,28 +29,24 @@ const Dashboard = () => (
             <p className="subtitle is-4">
               <strong>¡Hola, soy Itzel Enciso!</strong>
             </p>
-              <div className="content has-text-justified">
-                Mujer apasionada por la programación. Busco
-                aprender y desarrollar al máximo mis aptitudes como
-                desarrolladora web para eventualmente liderar un equipo donde se
-                fomente la comunicación efectiva y el trabajo bajo metodologías
-                Agile. Con experiencia en gestión de calidad y sus herramientas.
-              </div>
+            <div className="content has-text-justified">
+              {aboutData.overview}
+            </div>
             <Fade top>
-            <div className="columns">
-                          <div className="column">
-              <a
-                className="hvr-grow hvr-underline-from-center has-text-weight-bold is-size-4"
-                href="/ItzelE_CV.pdf"
-                download
-              >
-                          <figure className="icon is-large">
-            <img className="" src="/assets/icons/cv.png" alt="CV" />
-          <p className="cv">CV</p>
-          </figure>
-              </a>
-            </div>
-            </div>
+              <div className="columns">
+                <div className="column">
+                  <a
+                    className="hvr-grow hvr-underline-from-center has-text-weight-bold is-size-4"
+                    href="/ItzelE_CV.pdf"
+                    download
+                  >
+                    <figure className="icon is-large">
+                      <img className="" src="/assets/icons/cv.png" alt="CV" />
+                      <p className="cv">CV</p>
+                    </figure>
+                  </a>
+                </div>
+              </div>
             </Fade>
           </article>
         </div>
@@ -171,21 +168,21 @@ const Dashboard = () => (
     </div>
     <style jsx>
       {`
-      p.cv {
-        margin-top: -1rem;
-        color: chocolate;
-      }
-            .column {
-              align-items: center;
-              justify-content: center;
-              text-align: center;
-              padding: 0;
-            }
-                  .icon.is-large {
-                    width: 5rem;
-                    height: 5rem;
-                    display: inline-block;
-                  }
+        p.cv {
+          margin-top: -1rem;
+          color: chocolate;
+        }
+        .column {
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0;
+        }
+        .icon.is-large {
+          width: 5rem;
+          height: 5rem;
+          display: inline-block;
+        }
         .is-1 {
           padding: 0.75rem;
         }

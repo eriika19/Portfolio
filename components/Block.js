@@ -7,11 +7,11 @@ class Block extends Component {
     return (
       <Fade bottom>
         <div className="column" key={i}>
-        <div className="hvr-grow">
-          <figure className=" icon is-large">
-            <img className="" src={src} alt={text} />
-          </figure>
-          <p className="">{text}</p>
+          <div className="hvr-grow">
+            <figure className=" icon is-large">
+              <img className="" src={src} alt={text} />
+            </figure>
+            <p className="">{text}</p>
           </div>
         </div>
       </Fade>
@@ -21,10 +21,12 @@ class Block extends Component {
   render() {
     const { name, data } = this.props;
 
-    return name ?
-(      <Fragment>
+    return name ? (
+      <Fragment>
         <div>
-          <h1 className="has-text-centered-touch title is-1 title-columns">{name}</h1>
+          <h1 className="has-text-centered-touch title is-1 title-columns">
+            {name}
+          </h1>
         </div>
         <div className="columns">
           {data.map((item, i) => this.createItem(i, item.src, item.text))}
@@ -32,9 +34,9 @@ class Block extends Component {
 
         <style jsx global>
           {`
-          .title-columns {
-          margin-top: 5rem;
-          }
+            .title-columns {
+              margin-top: 5rem;
+            }
             .columns {
               margin: 2rem auto;
               width: 100%;
@@ -52,7 +54,7 @@ class Block extends Component {
           `}
         </style>
       </Fragment>
-      ) : ( 
+    ) : (
       <Fragment>
         <div className="columns">
           {data.map((item, i) => this.createItem(i, item.src, item.text))}
