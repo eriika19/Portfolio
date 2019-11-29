@@ -12,14 +12,12 @@ class Project extends Component {
       thumbnail,
       overview,
       date,
-      learnings,
       github,
       demo
     } = projectData.projects[id];
 
     const selector = "tile is-child notification is-bold ";
-    const overSelector =
-      "button is-inverted is-outlined is-link subtitle is-6";
+    const overSelector = "button is-inverted is-outlined is-link subtitle is-6";
 
     return (
       <article key={id} className={color ? selector + color : selector}>
@@ -55,7 +53,7 @@ class Project extends Component {
         <style jsx>
           {`
             .image img.is-thumbnail {
-              height: 13rem;
+              height: 12rem;
               width: auto;
               border-radius: 0.45rem;
               box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),

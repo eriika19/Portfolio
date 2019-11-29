@@ -1,3 +1,178 @@
 {
-"overview":""
+  "overview": "Mujer apasionada por la programación y el desarrollo web. Busco aprender y desarrollar al máximo mis aptitudes como desarrolladora web para eventualmente liderar un equipo donde se fomente la comunicación efectiva y el trabajo bajo metodologías Agile. Con experiencia en gestión de calidad y sus herramientas",
+
+  "tech1": [
+    {
+      "src": "/assets/icons/logic.png",
+      "text": "Lógica-Matemática"
+    },
+    {
+      "src": "/assets/icons/html-5.png",
+      "text": "HTML5"
+    },
+    {
+      "src": "/assets/icons/css.png",
+      "text": "CSS"
+    },
+    {
+      "src": "/assets/icons/js.png",
+      "text": "JavaScript"
+    },
+    {
+      "src": "/assets/icons/react.png",
+      "text": "React"
+    },
+    {
+      "src": "/assets/icons/next.png",
+      "text": "Next.js"
+    },
+    {
+      "src": "/assets/icons/node.png",
+      "text": "Node.js"
+    },
+    {
+      "src": "/assets/icons/english.png",
+      "text": "Inglés"
+    },
+    {
+      "src": "/assets/icons/data.png",
+      "text": "Manejo de data"
+    }
+  ],
+
+  "tech2": [
+    {
+      "src": "/assets/icons/agile.png",
+      "text": "Metodologías Agile"
+    },
+    {
+      "src": "/assets/icons/arquitecture.png",
+      "text": "Arquitectura de proyectos"
+    },
+    {
+      "src": "/assets/icons/ui.png",
+      "text": "UI"
+    },
+    {
+      "src": "/assets/icons/ux.png",
+      "text": "UX"
+    },
+    {
+      "src": "/assets/icons/design.png",
+      "text": "Principios de diseño"
+    },
+    {
+      "src": "/assets/icons/maquetacion.png",
+      "text": "Maquetación"
+    },
+    {
+      "src": "/assets/icons/responsive.png",
+      "text": "Diseño responsivo"
+    }
+  ],
+
+  "tech3": [
+    {
+      "src": "/assets/icons/solving.png",
+      "text": "Extrapolación"
+    },
+    {
+      "src": "/assets/icons/trello.png",
+      "text": "Trello"
+    },
+    {
+      "src": "/assets/icons/bootstrap.png",
+      "text": "Bootstrap"
+    },
+    {
+      "src": "/assets/icons/bulma.png",
+      "text": "Bulma"
+    },
+    {
+      "src": "/assets/icons/firebase.png",
+      "text": "Firebase"
+    },
+    {
+      "src": "/assets/icons/github.png",
+      "text": "GitHub"
+    },
+    {
+      "src": "/assets/icons/git.png",
+      "text": "Git"
+    },
+    {
+      "src": "/assets/icons/chemical.png",
+      "text": "Química"
+    }
+  ],
+
+  "soft": [
+    {
+      "src": "/assets/icons/leadership.png",
+      "text": "Liderazgo"
+    },
+    {
+      "src": "/assets/icons/comunication.png",
+      "text": "Colaboración"
+    },
+    {
+      "src": "/assets/icons/public.png",
+      "text": "Presentación en público"
+    },
+    {
+      "src": "/assets/icons/teamwork.png",
+      "text": "Trabajo en equipo"
+    },
+    {
+      "src": "/assets/icons/adaptability.png",
+      "text": "Adaptabilidad"
+    },
+    {
+      "src": "/assets/icons/support.png",
+      "text": "Establecimiento de acuerdos"
+    }
+  ],
+
+  "interest": [
+    {
+      "src": "/assets/icons/dance.png",
+      "text": "Baile"
+    },
+    {
+      "src": "/assets/icons/swim.png",
+      "text": "Natación"
+    },
+    {
+      "src": "/assets/icons/yoga.png",
+      "text": "Meditación"
+    },
+    {
+      "src": "/assets/icons/cinema.png",
+      "text": "Cine"
+    },
+    {
+      "src": "/assets/icons/sea-life.png",
+      "text": "Vida Marina"
+    },
+    {
+      "src": "/assets/icons/planet.png",
+      "text": "Medio Ambiente"
+    },
+    {
+      "src": "/assets/icons/makeup.png",
+      "text": "Maquilllaje"
+    },
+    {
+      "src": "/assets/icons/skincare.png",
+      "text": "Cosmética"
+    },
+    {
+      "src": "/assets/icons/nature.png",
+      "text": "Bosques"
+    },
+    {
+      "src": "/assets/icons/write.png",
+      "text": "Escritura terapéutica"
+    }
+  ]
 }

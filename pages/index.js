@@ -11,9 +11,9 @@ class Home extends Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll, true);
-        this.setState({
-          scrolled: 0
-        });
+    this.setState({
+      scrolled: 0
+    });
   }
 
   componentWillUnmount() {

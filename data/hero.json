@@ -6,8 +6,25 @@
   ],
   "carouselItems": [
     { "thumbnail": "Laptop-header", "src": "/assets/head.png" },
-    { "thumbnail": "MD-Links", "src": "/assets/md_links.jpg" },
-    { "thumbnail": "Sacbé", "src": "/assets/sacbe.png" },
-    { "thumbnail": "Steam-escritorio", "src": "/assets/steam_desktop.png" }
+    {
+      "thumbnail": "MD-Links",
+      "src": "/assets/md_links.jpg",
+      "url": "https://github.com/eriika19/md-links#demo"
+    },
+    {
+      "thumbnail": "Mesereando-logo",
+      "src": "/assets/mesereando-logo.png",
+      "url": "https://github.com/eriika19/MEX008-FE-Burger-Queen"
+    },
+    {
+      "thumbnail": "Sacbé",
+      "src": "/assets/sacbe_desktop.png",
+      "url": "https://github.com/eriika19/MEX008-social-network"
+    },
+    {
+      "thumbnail": "Steam-escritorio",
+      "src": "/assets/steam_desktop.png",
+      "url": "https://github.com/eriika19/MEX-Data-Lovers-008"
+    }
   ]
 }

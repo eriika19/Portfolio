@@ -19,6 +19,14 @@ class NavbarItem extends Component {
           }
         >
           {page}
+          <style jsx>
+            {`
+              a.navbar-item:focus,
+              a.navbar-item:focus-within {
+                background-color: inherit;
+              }
+            `}
+          </style>
         </a>
       </Link>
     );
