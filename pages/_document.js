@@ -11,10 +11,6 @@ class MyDocument extends Document {
           <NextScript />
           <style jsx global>
             {`
-              body {
-                font-family: 'Quicksand', sans-serif;
-                font-weight: 500 !important;
-              }
               a {
                 color: #fff;
               }

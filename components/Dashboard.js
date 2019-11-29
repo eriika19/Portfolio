@@ -36,7 +36,7 @@ const Dashboard = () => (
               <div className="columns">
                 <div className="column">
                   <a
-                    className="hvr-grow hvr-underline-from-center has-text-weight-bold is-size-4"
+                    className="cv hvr-grow hvr-underline-from-center has-text-weight-bold is-size-4"
                     href="/ItzelE_CV.pdf"
                     download
                   >
@@ -168,9 +168,12 @@ const Dashboard = () => (
     </div>
     <style jsx>
       {`
+        .hvr-underline-from-center:before {
+          background: #b151a9;
+        }
         p.cv {
           margin-top: -1rem;
-          color: chocolate;
+          color: #b151a9;
         }
         .column {
           align-items: center;

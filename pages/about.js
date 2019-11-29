@@ -78,9 +78,14 @@ class AboutPage extends Component {
             a.cv {
               margin-top: 1.5rem;
             }
+            a.hvr-underline-from-center:before {
+              background: #B151A9;
+              height: 3px;
+            }
             p.cv {
               margin-top: -1rem;
               margin-bottom: 1rem;
+              color: #B151A9;
               }
             }
           `}

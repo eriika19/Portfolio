@@ -5,9 +5,9 @@ import "hover.css/css/hover-min.css";
 class Block extends Component {
   createItem = (i, src, text) => {
     return (
-      <Fade bottom>
-        <div className="column" key={i}>
-          <div className="hvr-grow">
+      <Fade bottom key={i}>
+        <div className="column ">
+          <div className="hvr-grow hvr-underline-from-center">
             <figure className=" icon is-large">
               <img className="" src={src} alt={text} />
             </figure>
@@ -51,6 +51,10 @@ class Block extends Component {
               width: 4rem;
               height: 4rem;
             }
+            .hvr-underline-from-center:before {
+              background: currentColor;
+              height: 1px;
+            }
           `}
         </style>
       </Fragment>
@@ -74,6 +78,10 @@ class Block extends Component {
             .icon.is-large {
               width: 4rem;
               height: 4rem;
+            }
+            .hvr-underline-from-center:before {
+              background: currentColor;
+              height: 1px;
             }
           `}
         </style>
