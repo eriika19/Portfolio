@@ -25,13 +25,12 @@ class Header extends Component {
           <meta name="description" content="Front-End Portfolio" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#302ecd" />
+          <link rel="manifest" href="/static/manifest.json" />
+          <link rel="icon" href="/static/favicon.ico" />
           <link
             href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700|Satisfy&display=swap"
             rel="stylesheet"
-            key="google-font-Quicksand"
           ></link>
-          <link rel="manifest" href="/static/manifest.json" />
-          <link rel="icon" href="/static/favicon.ico" />
           <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css"
