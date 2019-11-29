@@ -27,6 +27,10 @@ class Header extends Component {
           <meta name="theme-color" content="#302ecd" />
           <link rel="manifest" href="/static/manifest.json" />
           <link rel="icon" href="/static/favicon.ico" />
+                    <link
+            href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700|Satisfy&display=swap"
+            rel="stylesheet"
+          ></link>
           <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css"
@@ -34,10 +38,6 @@ class Header extends Component {
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
-          ></link>
-          <link
-            href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700|Satisfy&display=swap"
-            rel="stylesheet"
           ></link>
           <script
             src="https://kit.fontawesome.com/9137d3badd.js"

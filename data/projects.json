@@ -16,7 +16,7 @@
       ],
       "thumbnail": "Mesereando",
       "src": "/assets/mesereando.png",
-      "type": "WPA",
+      "type": "PWA",
       "github": "https://github.com/eriika19/MEX008-FE-Burger-Queen",
       "demo": "https://eriika19.github.io/MEX008-FE-Burger-Queen",
       "label": ["Ir a repositorio GitHub", "Abrir Demo"]
@@ -46,8 +46,8 @@
       "title": "Sacbé",
       "subtitle": "Red Social (JS, Firebase, SPA)",
       "tags": ["spa", "firebase", "crud", "materialize", "here"],
-      "overview": "Sacbé en una web app mobile-first dirigida a ciclistas de la CDMX que se enfrentan a distintos contratiempos y peligros viales. El objetivo es crear una red de que permita a los ciclistas intercambiar información de interés común; además cuenta con funcionalidades de alto valor como un directorio, enfocado a la comunidad, que muestra un mapa con ubicación y un botón S.O.S. que permite compartir su ubicación, a otros usuarios, en caso de un percance.",
-      "description": "Sacbé en una web app mobile-first dirigida a ciclistas de la CDMX que se enfrentan a distintos contratiempos y peligros viales. El objetivo es crear una red de que permita a los ciclistas intercambiar información de interés común; además cuenta con funcionalidades de alto valor como un directorio, enfocado a la comunidad, que muestra un mapa con ubicación y un botón S.O.S. que permite compartir su ubicación, a otros usuarios, en caso de un percance.",
+      "overview": "Sacbé es una web app mobile-first dirigida a ciclistas de la CDMX que se enfrentan a distintos contratiempos y peligros viales. El objetivo es crear una red de que permita a los ciclistas intercambiar información de interés común; además cuenta con funcionalidades de alto valor como un directorio, enfocado a la comunidad, que muestra un mapa con ubicación y un botón S.O.S. que permite compartir su ubicación, a otros usuarios, en caso de un percance.",
+      "description": "Sacbé es una web app mobile-first dirigida a ciclistas de la CDMX que se enfrentan a distintos contratiempos y peligros viales. El objetivo es crear una red de que permita a los ciclistas intercambiar información de interés común; además cuenta con funcionalidades de alto valor como un directorio, enfocado a la comunidad, que muestra un mapa con ubicación y un botón S.O.S. que permite compartir su ubicación, a otros usuarios, en caso de un percance.",
       "learnings": [
         "Se trabajó bajo la metodología Agile y SCRUM para la planificación de tareas, sus tiempos y alcanzables de cada Sprint (3 Sprints)",
         "Trabajo colaborativo donde se trabajó en la comunicación eficaz, planificación y toma de decisiones en equipo.",

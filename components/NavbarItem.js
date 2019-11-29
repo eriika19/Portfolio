@@ -14,13 +14,22 @@ class NavbarItem extends Component {
                 ? "navbar-item is-active"
                 : "navbar-item is-active scrolled"
               : scrolled === 0
-              ? "navbar-item"
-              : "navbar-item scrolled has-text-black"
+                ? "navbar-item"
+                : "navbar-item scrolled has-text-black"
           }
         >
           {page}
+        <style jsx>
+          {`
+                    a.navbar-item:focus,
+            a.navbar-item:focus-within {
+              background-color: inherit;
+            }
+        `}
+          </style>
         </a>
-      </Link>
+        </Link>
+
     );
   }
 }
