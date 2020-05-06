@@ -1,9 +1,9 @@
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
-import Project from "../components/Project";
-import aboutData from "../data/about";
+import Project from '../components/Project';
+import aboutData from '../data/about';
 
 const Dashboard = () => (
   <section id="dashboard">
@@ -22,8 +22,8 @@ const Dashboard = () => (
             </div>
             <p className="is-size-4 has-text-centered has-text-weight-light">
               <em>
-                " Si no lo sé, <strong>lo aprendo.</strong> Me pongo la camiseta
-                y <strong>busco colaborar</strong> "
+                " Liderar es <strong> mover las velas.</strong> NO esperar a que
+                el viento te favorezca."
               </em>
             </p>
             <p className="subtitle is-4">
@@ -38,8 +38,7 @@ const Dashboard = () => (
                   <a
                     className="cv hvr-grow hvr-underline-from-center has-text-weight-bold is-size-4"
                     href="/ItzelE_CV.pdf"
-                    download
-                  >
+                    download>
                     <figure className="icon is-large">
                       <img className="" src="/assets/icons/cv.png" alt="CV" />
                       <p className="cv">CV</p>
@@ -70,7 +69,7 @@ const Dashboard = () => (
             </div>
           </article>
           <article className="tile is-child notification is-bold is-white">
-            <p className="title">IBM Week Challenge</p>
+            <p className="title">IBM Week</p>
             <p className="subtitle">Insignia</p>
             <div className="level">
               <figure className="image level-item is-award">
@@ -95,19 +94,19 @@ const Dashboard = () => (
           <div className="tile">
             <div className="tile is-vertical is-5">
               <div className="tile is-parent">
-                <Project id="2" color="is-link" />
+                <Project id="0" color="is-wine" />
               </div>
               <div className="tile is-parent">
-                <Project
-                  id="3"
-                  color="is-primary"
-                  img="is-rounded is-small-thumbnail shadow"
-                />
+              <Project id="1" color="is-light" />
               </div>
             </div>
             <div className="tile is-parent is-vertical">
-              <Project id="0" color="is-wine" />
-              <Project id="1" color="is-light" />
+              <Project id="2" color="is-info" />
+              <Project
+                id="3"
+                color="is-success"
+                img="is-rounded is-small-thumbnail shadow"
+              />
             </div>
           </div>
         </Zoom>
@@ -143,8 +142,7 @@ const Dashboard = () => (
                     <a
                       className="level-item over"
                       href="https://github.com/eriika19/MEX-Data-Lovers-008"
-                      target="_blank"
-                    >
+                      target="_blank">
                       <button className="button is-inverted is-outlined is-link subtitle is-6">
                         GitHub
                       </button>
@@ -152,8 +150,7 @@ const Dashboard = () => (
                     <a
                       className="level-item"
                       href="https://eriika19.github.io/MEX-Data-Lovers-008/src/"
-                      target="_blank"
-                    >
+                      target="_blank">
                       <button className="button is-inverted is-outlined is-info subtitle is-6">
                         Abrir Demo
                       </button>
@@ -233,7 +230,6 @@ const Dashboard = () => (
 
         .notification.is-wine {
           background-color: #821c48;
-          // background-color: #9C494A;
         }
         .subtitle.is-4 {
           margin: 3.1rem auto 1.9rem auto;

@@ -14,7 +14,7 @@ module.exports = {
     'airbnb-base'
   ],
   rules: {
-    '@typescipt-eslint/interface-name-prefix': ['always'],
+    '@typescipt-eslint/interface-name-prefix': [1],
     'no-underscore-dangle': 'error'
   }
 };

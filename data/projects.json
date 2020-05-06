@@ -2,23 +2,23 @@
   "projects": [
     {
       "id": "0",
-      "date": "Oct 2019",
-      "title": "Mesereando",
-      "subtitle": "Aplicación progresiva para PYME (React)",
-      "tags": ["react", "reactstrap", "react-router"],
-      "overview": "Mesereando es una Progressive Web App diseñada para la eficiente gestión y toma de pedidos de una PYME de servicio de comida rápida.",
-      "description": "Mesereando es una Progressive Web App diseñada para la gestión y toma de comandas de una PYME de comida rápida utilizando la librería React",
+      "date": "Ene 2020",
+      "title": "GitHub Match",
+      "subtitle": "Explorador para API GitHub",
+      "tags": ["NEXT", "Bulma", "Express", "Axios", "API", "React-Hooks", "Eslint"],
+      "overview": "GitHub Match es una app mobile-first que facilita la aecploración de la API GitHub para encontrar repositorios y usuarios en GitHub.",
+      "description": "Esta aplicación se desarrollo para facilitar la búsqueda y navegación de repositorios y usuarios en GitHub. Consumiendo la API de GitHub implementando solicitudes Axios; añadiendo la configuración necesaria para obtener resultados satisfactorios en todas las auditorías de Lighthouse; con el fin de desarrollar una app mobile first que propocione la mejor experiencia de usuario posible.",
       "learnings": [
-        "Primer proyecto de React",
-        "Trabajo colaborativo entre equipo UX y FE. Se implementó el uso de herramientas SCRUM y Agile para una efectiva comunicación entre todas las integrantes del equipo con el fin de un toma de decisiones colaborativa que permitió priorizar, planificar, efectuar programación colaborativa, asignación de responsabilidades, testeo de producto y manejo de frustración en equipo.",
+        "Primer proyecto implementando servidor Express en configuración para Next.js",
+        "Planificación total del proyecto, incluyendo, diseño de flujo de usuario e interfaz intuitiva implementando herramientas SCRUM y Agile.",
         "Se aplicó el concepto de Web App Progresiva para lo cuál se crearon los iconos aplicables a distintos dispositivos (móviles y de escritorio).",
         "Auditorías por parte de Lighthouse con excelentes resultados en rendimiento, accesibilidad y estado progresivo (funcionamiento sin conexión a Internet)."
       ],
-      "thumbnail": "Mesereando",
-      "src": "/assets/mesereando.png",
-      "type": "PWA",
-      "github": "https://github.com/eriika19/MEX008-FE-Burger-Queen",
-      "demo": "https://eriika19.github.io/MEX008-FE-Burger-Queen",
+      "thumbnail": "GitHub-Match",
+      "src": "/assets/github-match.png",
+      "type": "Browser for GitHub API ",
+      "github": "https://github.com/eriika19/GitHubMatch",
+      "demo": "https://git-hub-match.now.sh/",
       "label": ["Ir a repositorio GitHub", "Abrir Demo"]
     },
     {
@@ -46,7 +46,7 @@
       "title": "Sacbé",
       "subtitle": "Red Social (JS, Firebase, SPA)",
       "tags": ["spa", "firebase", "crud", "materialize", "here"],
-      "overview": "Sacbé es una web app mobile-first dirigida a ciclistas de la CDMX que se enfrentan a distintos contratiempos y peligros viales. El objetivo es crear una red de que permita a los ciclistas intercambiar información de interés común; además cuenta con funcionalidades de alto valor como un directorio, enfocado a la comunidad, que muestra un mapa con ubicación y un botón S.O.S. que permite compartir su ubicación, a otros usuarios, en caso de un percance.",
+      "overview": "Sacbé es una app mobile-first dirigida a ciclistas que enfrentan la ciudad cada día. Permite a los ciclistas intercambiar información de interés común e incluye funcionalidades de valor como un directorio, mapa con geolocalización y botón S.O.S. para alertar a otros usuarios en caso de peligro.",
       "description": "Sacbé es una web app mobile-first dirigida a ciclistas de la CDMX que se enfrentan a distintos contratiempos y peligros viales. El objetivo es crear una red de que permita a los ciclistas intercambiar información de interés común; además cuenta con funcionalidades de alto valor como un directorio, enfocado a la comunidad, que muestra un mapa con ubicación y un botón S.O.S. que permite compartir su ubicación, a otros usuarios, en caso de un percance.",
       "learnings": [
         "Se trabajó bajo la metodología Agile y SCRUM para la planificación de tareas, sus tiempos y alcanzables de cada Sprint (3 Sprints)",
@@ -97,6 +97,27 @@
       "type": "news web app",
       "github": "https://github.com/eriika19/MEX-Data-Lovers-008",
       "demo": "https://eriika19.github.io/MEX-Data-Lovers-008/src/",
+      "label": ["Ir a repositorio GitHub", "Abrir Demo"]
+    },
+    {
+      "id": "5",
+      "date": "Oct 2019",
+      "title": "Mesereando",
+      "subtitle": "Aplicación progresiva para PYME (React)",
+      "tags": ["react", "reactstrap", "react-router"],
+      "overview": "Mesereando es una Progressive Web App diseñada para la eficiente gestión y toma de pedidos de una PYME de servicio de comida rápida.",
+      "description": "Mesereando es una Progressive Web App diseñada para la gestión y toma de comandas de una PYME de comida rápida utilizando la librería React",
+      "learnings": [
+        "Primer proyecto de React",
+        "Trabajo colaborativo entre equipo UX y FE. Se implementó el uso de herramientas SCRUM y Agile para una efectiva comunicación entre todas las integrantes del equipo con el fin de un toma de decisiones colaborativa que permitió priorizar, planificar, efectuar programación colaborativa, asignación de responsabilidades, testeo de producto y manejo de frustración en equipo.",
+        "Se aplicó el concepto de Web App Progresiva para lo cuál se crearon los iconos aplicables a distintos dispositivos (móviles y de escritorio).",
+        "Auditorías por parte de Lighthouse con excelentes resultados en rendimiento, accesibilidad y estado progresivo (funcionamiento sin conexión a Internet)."
+      ],
+      "thumbnail": "Mesereando",
+      "src": "/assets/mesereando.png",
+      "type": "PWA",
+      "github": "https://github.com/eriika19/MEX008-FE-Burger-Queen",
+      "demo": "https://eriika19.github.io/MEX008-FE-Burger-Queen",
       "label": ["Ir a repositorio GitHub", "Abrir Demo"]
     }
   ]
