@@ -97,11 +97,16 @@ const Dashboard = () => (
                 <Project id="0" color="is-wine" />
               </div>
               <div className="tile is-parent">
-              <Project id="1" color="is-light" />
+                <Project id="2" color="is-info" />
               </div>
             </div>
             <div className="tile is-parent is-vertical">
-              <Project id="2" color="is-info" />
+              <Project
+                id="6"
+                color="is-light"
+                img="is-rounded is-small-thumbnail shadow"
+              />
+              <Project id="1" color="is-dark" />
               <Project
                 id="3"
                 color="is-success"

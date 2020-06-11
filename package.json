@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "SET NODE_ENV=production && node server.js",
-    "start2": "NODE_ENV=production && node server.js"
+    "start2": "SET NODE_ENV=production && node server.js",
+    "start": "NODE_ENV=production && node server.js"
   },
   "browserslist": {
     "production": [

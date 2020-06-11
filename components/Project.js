@@ -37,9 +37,6 @@ class Project extends Component {
         <div className="overlay show-on-hover">
           <div className="content-on-hover">
             <p className="over title is-1 has-text-white">{title}</p>
-            {/*             {learnings.map((learning, i) => (
-              <p className="content has-text-white">{learning}</p>
-            ))} */}
             <div className="level">
               <a className="level-item over" href={github} target="_blank">
                 <button className={overSelector}>GitHub</button>

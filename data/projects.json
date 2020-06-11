@@ -6,7 +6,7 @@
       "title": "GitHub Match",
       "subtitle": "Explorador para API GitHub",
       "tags": ["NEXT", "Bulma", "Express", "Axios", "API", "React-Hooks", "Eslint"],
-      "overview": "GitHub Match es una app mobile-first que facilita la aecploración de la API GitHub para encontrar repositorios y usuarios en GitHub.",
+      "overview": "GitHub Match es una app mobile-first que facilita la exploración de la API GitHub para encontrar repositorios y usuarios en GitHub.",
       "description": "Esta aplicación se desarrollo para facilitar la búsqueda y navegación de repositorios y usuarios en GitHub. Consumiendo la API de GitHub implementando solicitudes Axios; añadiendo la configuración necesaria para obtener resultados satisfactorios en todas las auditorías de Lighthouse; con el fin de desarrollar una app mobile first que propocione la mejor experiencia de usuario posible.",
       "learnings": [
         "Primer proyecto implementando servidor Express en configuración para Next.js",
@@ -118,6 +118,26 @@
       "type": "PWA",
       "github": "https://github.com/eriika19/MEX008-FE-Burger-Queen",
       "demo": "https://eriika19.github.io/MEX008-FE-Burger-Queen",
+      "label": ["Ir a repositorio GitHub", "Abrir Demo"]
+    },
+    {
+      "id": "6",
+      "date": "May 2020",
+      "title": "Wanna-taco",
+      "subtitle": "Localizador de restaurantes",
+      "tags": ["NEXT", "Bulma", "Express", "Axios", "API", "React-Hooks", "Eslint", "Husky", "Lint-staged", "Leaflet"],
+      "overview": "GitHub Match es una web app que facilita la exploración y localización de los mejores restaurantes en la ciudad.",
+      "description": "Esta aplicación se desarrollo para brindar información actualizada de los mejores los restaurantes.Facilitando la búsqueda por tipo de comida, orden alfabètico o puntuación. Se consumió una API mediante solicitudes Axios y se construyó un mapa interactivo que muestra la ubicación e información relevante de distintos restaurantes.",
+      "learnings": [
+        "Planificación total del proyecto, incluyendo, diseño de flujo de usuario e interfaz intuitiva implementando herramientas SCRUM y Agile.",
+        "Se realizó configuración para Husky y lint-staged aplicando reglas de estilo de prettier y eslint",
+        "Se implementó mapa interactivo con pop up desplegables a partir del consumo de la API"
+      ],
+      "thumbnail": "Wanna-taco",
+      "src": "/assets/wanna-taco.png",
+      "type": "Browser for restaurants API and interactive map",
+      "github": "https://github.com/eriika19/wanna-taco",
+      "demo": "https://wanna-taco.now.sh/",
       "label": ["Ir a repositorio GitHub", "Abrir Demo"]
     }
   ]
